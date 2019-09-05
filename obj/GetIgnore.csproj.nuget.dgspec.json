@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\connor.mcdermott\\source\\repos\\GetIgnore\\GetIgnore.csproj": {}
+    "C:\\Users\\connor.mcdermott\\source\\repos\\GetIgnore\\GetIgnore.csproj": {}
   },
   "projects": {
-    "c:\\Users\\connor.mcdermott\\source\\repos\\GetIgnore\\GetIgnore.csproj": {
-      "version": "1.0.0",
+    "C:\\Users\\connor.mcdermott\\source\\repos\\GetIgnore\\GetIgnore.csproj": {
+      "version": "0.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\connor.mcdermott\\source\\repos\\GetIgnore\\GetIgnore.csproj",
+        "projectUniqueName": "C:\\Users\\connor.mcdermott\\source\\repos\\GetIgnore\\GetIgnore.csproj",
         "projectName": "GetIgnore",
-        "projectPath": "c:\\Users\\connor.mcdermott\\source\\repos\\GetIgnore\\GetIgnore.csproj",
+        "projectPath": "C:\\Users\\connor.mcdermott\\source\\repos\\GetIgnore\\GetIgnore.csproj",
         "packagesPath": "C:\\Users\\connor.mcdermott\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\connor.mcdermott\\source\\repos\\GetIgnore\\obj\\",
+        "outputPath": "C:\\Users\\connor.mcdermott\\source\\repos\\GetIgnore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,6 +41,22 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "Microsoft.Extensions.CommandLineUtils": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
