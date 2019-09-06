@@ -35,41 +35,45 @@ namespace GetIgnore
 
             var output = app.Option("-o|--output <outputFile>", 
                        "Define the file to output to instead of .gitignore",
-                       CommandOptionType.SingleValue);
+                       CommandOptionType.SingleValue
+            );
 
             var ignoreFiles = app.Argument("ignoreFiles",
                                       "Languages or environments to fetch .gitignore for",
                                       true //Multiple Values
             );
 
+            // Long option name (e.g. --verbose) MUST match the corresponding value in Enum Options
             var verbose = app.Option("-v|--verbose",
                                      "Be more talkative than normal.",
-                                     CommandOptionType.NoValue);
+                                     CommandOptionType.NoValue
+            );
             var preview = app.Option("-p|--preview",
                                      "Preview the .gitignore in stdout before saving.",
-                                     CommandOptionType.NoValue);
+                                     CommandOptionType.NoValue
+            );
+            var force = app.Option("-f|--force",
+                                   "Ignore prompts (yes to all)",
+                                   CommandOptionType.NoValue
+            );
 
             app.OnExecute(() => {
                 //Collect flags into one place
 
-                Options option = Options.None;
-                if(verbose.HasValue()){
-                    option &= Options.Verbose;
-                }
-                if(preview.HasValue()){
-                    option &= Options.Preview;
-                }
-                Console.WriteLine("Beep Borp");
-                GHGetIgnore getter = new GHGetIgnore(option);
-                //string gitignore = getter.Get(ignoreFiles.Values);
+                Options flags = GetFlags(app.GetOptions());
 
+                GHGetIgnore getter = new GHGetIgnore(flags);
+                string gitignore = getter.Get(ignoreFiles.Values);
+                if(flags.HasFlag(Options.Preview)){
+                    Console.WriteLine(gitignore);
+                }
                 return 0;
             });
 
             app.Command("search", (command) => {
-                Console.WriteLine("Zip Zorp");
-
                 command.OnExecute(() => {
+                    Console.Error.WriteLine("Error: Search is not yet implemented");
+
                     return 0;
                 });
             });
@@ -87,6 +91,32 @@ namespace GetIgnore
                 Console.WriteLine("Unable to execute application: {0}", ex.Message);
             }
             
+        }
+
+        // Wrote this in a way that it doesn't need to be changed whenever an option is added
+        // Using the CommandOptions given, return Options flags for easier use
+        private static Options GetFlags(IEnumerable<CommandOption> optionArgs)
+        {
+            Options flags = Options.None;
+            
+            // For every potential flag
+            foreach(CommandOption opt in optionArgs)
+            {
+                // If the flag is used (Has Value doesn't refer to whether or not an argument was given)
+                if(opt.HasValue())
+                {
+                    foreach(Options f in Enum.GetValues(typeof(Options))){
+                        if(opt.LongName.ToLower() == f.ToString().ToLower())
+                        {
+                            if(!flags.HasFlag(f)){
+                                flags &= f;
+                            }
+                        }
+                    }
+                }
+            }
+
+            return flags;
         }
     }
 }
