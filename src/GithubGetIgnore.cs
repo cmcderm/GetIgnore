@@ -32,6 +32,7 @@ namespace GetIgnore
             return gitignore;
         }
 
+        // TODO: Implement lol
         public string Search(string[] ignoreFiles)
         {
             throw new NotImplementedException();

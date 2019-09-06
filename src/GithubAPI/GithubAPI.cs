@@ -2,6 +2,7 @@ using System;
 
 namespace GetIgnore.Github
 {
+    // TODO: Implement lol
     public class GithubAPI
     {
         public string download(string ignore){
