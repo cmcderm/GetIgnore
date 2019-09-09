@@ -49,13 +49,16 @@ namespace GetIgnore
                                      CommandOptionType.NoValue
             );
             var preview = app.Option("-p|--preview",
-                                     "Preview the .gitignore in stdout before saving.",
+                                     "Preview the .gitignore in stdout before saving. Adds a confirmation before saving.",
                                      CommandOptionType.NoValue
             );
             var force = app.Option("-f|--force",
                                    "Ignore prompts (yes to all)",
                                    CommandOptionType.NoValue
             );
+            var append = app.Option("-a|--append",
+                                    "Append .gitignore contents instead of overwriting existing.",
+                                    CommandOptionType.NoValue);
 
             app.OnExecute(() => {
                 //Collect flags into one place
@@ -64,9 +67,44 @@ namespace GetIgnore
 
                 GHGetIgnore getter = new GHGetIgnore(flags);
                 string gitignore = getter.Get(ignoreFiles.Values);
+                
+                // Resolve File Name
+                string outputFile = @".\.gitignore";
+                if(output.HasValue()){
+                    Console.WriteLine("Writing .gitignore to {0}...", output.Value());
+                    outputFile = output.Value();
+                }
+
+                // If preview is selected, show and prompt the user to confirm
+                bool saveFile = true;
                 if(flags.HasFlag(Options.Preview)){
                     Console.WriteLine(gitignore);
+                    saveFile = UserInputReader.GetConfirmation("Save file to " + outputFile + "?");
                 }
+
+                // Write File
+                if(saveFile)
+                {
+                    try
+                    {
+                        // I like this for resolving paths
+                        DirectoryInfo dir = new DirectoryInfo(outputFile);
+                        if(flags.HasFlag(Options.Append))
+                        {
+                            File.AppendAllText(dir.FullName, gitignore);
+                        }
+                        else
+                        {
+                            File.WriteAllText(dir.FullName, gitignore);
+                        }
+                    }
+                    catch ( Exception ex )
+                    {
+                        Console.Error.WriteLine("Unable to write to file: {0}", ex.Message);
+                    }
+                    
+                }
+                
                 return 0;
             });
 
@@ -105,11 +143,13 @@ namespace GetIgnore
                 // If the flag is used (Has Value doesn't refer to whether or not an argument was given)
                 if(opt.HasValue())
                 {
+                    // Check against all potential flags (as given in Options.cs)
                     foreach(Options f in Enum.GetValues(typeof(Options))){
+                        // Compare names -- If there's a better way to match an option to the enum value I'd love to know
                         if(opt.LongName.ToLower() == f.ToString().ToLower())
                         {
                             if(!flags.HasFlag(f)){
-                                flags &= f;
+                                flags |= f;
                             }
                         }
                     }

@@ -8,5 +8,6 @@ namespace GetIgnore
         None = 0,
         Verbose = 1 << 0,
         Preview = 1 << 1,
+        Append = 1 << 2,
     }
 }

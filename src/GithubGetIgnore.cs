@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Text;
 using GetIgnore.Github;
 
 namespace GetIgnore
@@ -17,25 +18,39 @@ namespace GetIgnore
         ///</Summary>
         public string Get(IEnumerable<String> ignoreFiles)
         {
-            string gitignore = "";
+            StringBuilder gitignore = new StringBuilder();
             foreach(string ignore in ignoreFiles)
             {
                 try
                 {
-                    gitignore += _gh.download(ignore);
+                    gitignore.Append(_gh.download(ignore) + Environment.NewLine);
                 }
-                catch( Exception ex ) {
+                catch( Exception ex ) 
+                {
                     Console.WriteLine("Error: Could not download the specified .gitignore: {0}", ignore);
                     Console.WriteLine(ex.Message);
                 }
             }
-            return gitignore;
+            return gitignore.ToString();
         }
 
         // TODO: Implement lol
         public string Search(string[] ignoreFiles)
         {
-            throw new NotImplementedException();
+            string gitignore = "";
+            foreach(string ignore in ignoreFiles)
+            {
+                try
+                {
+                    gitignore += _gh.search(ignore);
+                }
+                catch( Exception ex )
+                {
+                    Console.WriteLine("Error: Could not complete search: {0}", ignore);
+                    Console.WriteLine(ex.Message);
+                }
+            }
+            return gitignore;
         }
     }
 }

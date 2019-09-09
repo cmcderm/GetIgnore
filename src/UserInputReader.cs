@@ -6,7 +6,7 @@ namespace GetIgnore
     // But it probably exists in a much better state out on the wild
     public class UserInputReader
     {
-        public bool GetConfirmation(string question, bool defaultAnswer = false){
+        static public bool GetConfirmation(string question, bool defaultAnswer = true){
             Console.WriteLine("{0} ({1}): ",
                 question,
                 defaultAnswer ? "Y/n" : "y/N"
@@ -14,7 +14,7 @@ namespace GetIgnore
             return isYes(Console.ReadLine(), defaultAnswer);
         }
 
-        public bool isYes(string input, bool defaultAnswer = false)
+        static public bool isYes(string input, bool defaultAnswer = false)
         {
             if(input != null && input.Length != 0)
             {
