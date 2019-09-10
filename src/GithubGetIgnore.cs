@@ -25,10 +25,15 @@ namespace GetIgnore
                 {
                     gitignore.Append(_gh.download(ignore) + Environment.NewLine);
                 }
-                catch( Exception ex ) 
+                catch(System.IO.FileNotFoundException)
+                {
+                    Console.WriteLine("Error: The specified .gitignore ({0}) could not be found", ignore);
+                }
+                catch(Exception ex) 
                 {
                     Console.WriteLine("Error: Could not download the specified .gitignore: {0}", ignore);
                     Console.WriteLine(ex.Message);
+                    throw new Exception("Error downloading .gitignore", ex);
                 }
             }
             return gitignore.ToString();

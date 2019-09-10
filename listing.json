@@ -1,0 +1,2146 @@
+[
+  {
+    "name": ".github",
+    "path": ".github",
+    "sha": "45f58ef9211cc06f3ef86585c7ecb1b3d52fd4f9",
+    "size": 0,
+    "url": "https://api.github.com/repos/github/gitignore/contents/.github?ref=master",
+    "html_url": "https://github.com/github/gitignore/tree/master/.github",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/trees/45f58ef9211cc06f3ef86585c7ecb1b3d52fd4f9",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/.github?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/trees/45f58ef9211cc06f3ef86585c7ecb1b3d52fd4f9",
+      "html": "https://github.com/github/gitignore/tree/master/.github"
+    }
+  },
+  {
+    "name": ".travis.yml",
+    "path": ".travis.yml",
+    "sha": "4009e0bc8b07582c19fa761810c9f3741ab76597",
+    "size": 103,
+    "url": "https://api.github.com/repos/github/gitignore/contents/.travis.yml?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/.travis.yml",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/4009e0bc8b07582c19fa761810c9f3741ab76597",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/.travis.yml",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/.travis.yml?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/4009e0bc8b07582c19fa761810c9f3741ab76597",
+      "html": "https://github.com/github/gitignore/blob/master/.travis.yml"
+    }
+  },
+  {
+    "name": "Actionscript.gitignore",
+    "path": "Actionscript.gitignore",
+    "sha": "5d947ca8879f8a9072fe485c566204e3c2929e80",
+    "size": 350,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Actionscript.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Actionscript.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/5d947ca8879f8a9072fe485c566204e3c2929e80",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Actionscript.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Actionscript.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/5d947ca8879f8a9072fe485c566204e3c2929e80",
+      "html": "https://github.com/github/gitignore/blob/master/Actionscript.gitignore"
+    }
+  },
+  {
+    "name": "Ada.gitignore",
+    "path": "Ada.gitignore",
+    "sha": "b4d703968a488445345202ef8d45a35cc802aa03",
+    "size": 51,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Ada.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Ada.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/b4d703968a488445345202ef8d45a35cc802aa03",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Ada.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Ada.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/b4d703968a488445345202ef8d45a35cc802aa03",
+      "html": "https://github.com/github/gitignore/blob/master/Ada.gitignore"
+    }
+  },
+  {
+    "name": "Agda.gitignore",
+    "path": "Agda.gitignore",
+    "sha": "58ab67f0712c69d45bc7d819e4d5f7ffc6830aaf",
+    "size": 19,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Agda.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Agda.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/58ab67f0712c69d45bc7d819e4d5f7ffc6830aaf",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Agda.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Agda.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/58ab67f0712c69d45bc7d819e4d5f7ffc6830aaf",
+      "html": "https://github.com/github/gitignore/blob/master/Agda.gitignore"
+    }
+  },
+  {
+    "name": "Android.gitignore",
+    "path": "Android.gitignore",
+    "sha": "3a2ecdb56256b7c8da538a5bd85cf5f2ec091323",
+    "size": 1313,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Android.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Android.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/3a2ecdb56256b7c8da538a5bd85cf5f2ec091323",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Android.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Android.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/3a2ecdb56256b7c8da538a5bd85cf5f2ec091323",
+      "html": "https://github.com/github/gitignore/blob/master/Android.gitignore"
+    }
+  },
+  {
+    "name": "AppEngine.gitignore",
+    "path": "AppEngine.gitignore",
+    "sha": "62273454531a136f13f5ce156157c03e243e8c2c",
+    "size": 58,
+    "url": "https://api.github.com/repos/github/gitignore/contents/AppEngine.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/AppEngine.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/62273454531a136f13f5ce156157c03e243e8c2c",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/AppEngine.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/AppEngine.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/62273454531a136f13f5ce156157c03e243e8c2c",
+      "html": "https://github.com/github/gitignore/blob/master/AppEngine.gitignore"
+    }
+  },
+  {
+    "name": "AppceleratorTitanium.gitignore",
+    "path": "AppceleratorTitanium.gitignore",
+    "sha": "3abea5597613e5baef43877d021dbcdf68048d17",
+    "size": 45,
+    "url": "https://api.github.com/repos/github/gitignore/contents/AppceleratorTitanium.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/AppceleratorTitanium.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/3abea5597613e5baef43877d021dbcdf68048d17",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/AppceleratorTitanium.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/AppceleratorTitanium.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/3abea5597613e5baef43877d021dbcdf68048d17",
+      "html": "https://github.com/github/gitignore/blob/master/AppceleratorTitanium.gitignore"
+    }
+  },
+  {
+    "name": "ArchLinuxPackages.gitignore",
+    "path": "ArchLinuxPackages.gitignore",
+    "sha": "b73905529f237733c3690a9355d4730c6c9e61a6",
+    "size": 75,
+    "url": "https://api.github.com/repos/github/gitignore/contents/ArchLinuxPackages.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/ArchLinuxPackages.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/b73905529f237733c3690a9355d4730c6c9e61a6",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/ArchLinuxPackages.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/ArchLinuxPackages.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/b73905529f237733c3690a9355d4730c6c9e61a6",
+      "html": "https://github.com/github/gitignore/blob/master/ArchLinuxPackages.gitignore"
+    }
+  },
+  {
+    "name": "Autotools.gitignore",
+    "path": "Autotools.gitignore",
+    "sha": "3523288c493bb43c434782badced044c5cd39cc9",
+    "size": 729,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Autotools.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Autotools.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/3523288c493bb43c434782badced044c5cd39cc9",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Autotools.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Autotools.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/3523288c493bb43c434782badced044c5cd39cc9",
+      "html": "https://github.com/github/gitignore/blob/master/Autotools.gitignore"
+    }
+  },
+  {
+    "name": "C++.gitignore",
+    "path": "C++.gitignore",
+    "sha": "259148fa18f9fb7ef58563f4ff15fc7b172339fb",
+    "size": 270,
+    "url": "https://api.github.com/repos/github/gitignore/contents/C%2B%2B.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/C%2B%2B.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/259148fa18f9fb7ef58563f4ff15fc7b172339fb",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/C%2B%2B.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/C%2B%2B.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/259148fa18f9fb7ef58563f4ff15fc7b172339fb",
+      "html": "https://github.com/github/gitignore/blob/master/C%2B%2B.gitignore"
+    }
+  },
+  {
+    "name": "C.gitignore",
+    "path": "C.gitignore",
+    "sha": "c6127b38c1aa25968a88db3940604d41529e4cf5",
+    "size": 430,
+    "url": "https://api.github.com/repos/github/gitignore/contents/C.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/C.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/c6127b38c1aa25968a88db3940604d41529e4cf5",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/C.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/C.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/c6127b38c1aa25968a88db3940604d41529e4cf5",
+      "html": "https://github.com/github/gitignore/blob/master/C.gitignore"
+    }
+  },
+  {
+    "name": "CFWheels.gitignore",
+    "path": "CFWheels.gitignore",
+    "sha": "f2fec34ff897c8af9a339bb7ade95841229e3109",
+    "size": 205,
+    "url": "https://api.github.com/repos/github/gitignore/contents/CFWheels.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/CFWheels.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/f2fec34ff897c8af9a339bb7ade95841229e3109",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/CFWheels.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/CFWheels.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/f2fec34ff897c8af9a339bb7ade95841229e3109",
+      "html": "https://github.com/github/gitignore/blob/master/CFWheels.gitignore"
+    }
+  },
+  {
+    "name": "CMake.gitignore",
+    "path": "CMake.gitignore",
+    "sha": "46f42f8f3ce85fc4e5a5c204ba75936ae6a636a9",
+    "size": 165,
+    "url": "https://api.github.com/repos/github/gitignore/contents/CMake.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/CMake.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/46f42f8f3ce85fc4e5a5c204ba75936ae6a636a9",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/CMake.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/CMake.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/46f42f8f3ce85fc4e5a5c204ba75936ae6a636a9",
+      "html": "https://github.com/github/gitignore/blob/master/CMake.gitignore"
+    }
+  },
+  {
+    "name": "CONTRIBUTING.md",
+    "path": "CONTRIBUTING.md",
+    "sha": "c6938381958cd8161afcc3b83068c17d94ab104d",
+    "size": 2205,
+    "url": "https://api.github.com/repos/github/gitignore/contents/CONTRIBUTING.md?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/CONTRIBUTING.md",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/c6938381958cd8161afcc3b83068c17d94ab104d",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/CONTRIBUTING.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/CONTRIBUTING.md?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/c6938381958cd8161afcc3b83068c17d94ab104d",
+      "html": "https://github.com/github/gitignore/blob/master/CONTRIBUTING.md"
+    }
+  },
+  {
+    "name": "CUDA.gitignore",
+    "path": "CUDA.gitignore",
+    "sha": "cb385db83feab198506af09a2de20526e2252979",
+    "size": 38,
+    "url": "https://api.github.com/repos/github/gitignore/contents/CUDA.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/CUDA.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/cb385db83feab198506af09a2de20526e2252979",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/CUDA.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/CUDA.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/cb385db83feab198506af09a2de20526e2252979",
+      "html": "https://github.com/github/gitignore/blob/master/CUDA.gitignore"
+    }
+  },
+  {
+    "name": "CakePHP.gitignore",
+    "path": "CakePHP.gitignore",
+    "sha": "c6597e4eabf8c5e9e6a6388ca786c7f507ddec00",
+    "size": 353,
+    "url": "https://api.github.com/repos/github/gitignore/contents/CakePHP.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/CakePHP.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/c6597e4eabf8c5e9e6a6388ca786c7f507ddec00",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/CakePHP.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/CakePHP.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/c6597e4eabf8c5e9e6a6388ca786c7f507ddec00",
+      "html": "https://github.com/github/gitignore/blob/master/CakePHP.gitignore"
+    }
+  },
+  {
+    "name": "ChefCookbook.gitignore",
+    "path": "ChefCookbook.gitignore",
+    "sha": "5ee7b7a9a1806b35853f7e836a0a7fde15aaf509",
+    "size": 77,
+    "url": "https://api.github.com/repos/github/gitignore/contents/ChefCookbook.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/ChefCookbook.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/5ee7b7a9a1806b35853f7e836a0a7fde15aaf509",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/ChefCookbook.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/ChefCookbook.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/5ee7b7a9a1806b35853f7e836a0a7fde15aaf509",
+      "html": "https://github.com/github/gitignore/blob/master/ChefCookbook.gitignore"
+    }
+  },
+  {
+    "name": "Clojure.gitignore",
+    "path": "Clojure.gitignore",
+    "sha": "7657a270c457f4d600c76f2a91775c90b730062d",
+    "size": 19,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Clojure.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Clojure.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/7657a270c457f4d600c76f2a91775c90b730062d",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Clojure.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Clojure.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/7657a270c457f4d600c76f2a91775c90b730062d",
+      "html": "https://github.com/github/gitignore/blob/master/Clojure.gitignore"
+    }
+  },
+  {
+    "name": "CodeIgniter.gitignore",
+    "path": "CodeIgniter.gitignore",
+    "sha": "bfea17cdc5bbbcf74bb6b4ee9e88669154b19143",
+    "size": 336,
+    "url": "https://api.github.com/repos/github/gitignore/contents/CodeIgniter.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/CodeIgniter.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/bfea17cdc5bbbcf74bb6b4ee9e88669154b19143",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/CodeIgniter.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/CodeIgniter.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/bfea17cdc5bbbcf74bb6b4ee9e88669154b19143",
+      "html": "https://github.com/github/gitignore/blob/master/CodeIgniter.gitignore"
+    }
+  },
+  {
+    "name": "CommonLisp.gitignore",
+    "path": "CommonLisp.gitignore",
+    "sha": "e7de127b014060bb3414971121e2fa7a9d7edb54",
+    "size": 158,
+    "url": "https://api.github.com/repos/github/gitignore/contents/CommonLisp.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/CommonLisp.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/e7de127b014060bb3414971121e2fa7a9d7edb54",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/CommonLisp.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/CommonLisp.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/e7de127b014060bb3414971121e2fa7a9d7edb54",
+      "html": "https://github.com/github/gitignore/blob/master/CommonLisp.gitignore"
+    }
+  },
+  {
+    "name": "Composer.gitignore",
+    "path": "Composer.gitignore",
+    "sha": "a67d42b32f8693498f7996ecce27df94a04728f6",
+    "size": 274,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Composer.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Composer.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/a67d42b32f8693498f7996ecce27df94a04728f6",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Composer.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Composer.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/a67d42b32f8693498f7996ecce27df94a04728f6",
+      "html": "https://github.com/github/gitignore/blob/master/Composer.gitignore"
+    }
+  },
+  {
+    "name": "Concrete5.gitignore",
+    "path": "Concrete5.gitignore",
+    "sha": "1fe53611e5d7baf0dbe9678343fc9795a6f660bc",
+    "size": 52,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Concrete5.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Concrete5.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/1fe53611e5d7baf0dbe9678343fc9795a6f660bc",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Concrete5.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Concrete5.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/1fe53611e5d7baf0dbe9678343fc9795a6f660bc",
+      "html": "https://github.com/github/gitignore/blob/master/Concrete5.gitignore"
+    }
+  },
+  {
+    "name": "Coq.gitignore",
+    "path": "Coq.gitignore",
+    "sha": "f25a61d9964771127aba75e69c46e661a9809b73",
+    "size": 252,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Coq.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Coq.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/f25a61d9964771127aba75e69c46e661a9809b73",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Coq.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Coq.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/f25a61d9964771127aba75e69c46e661a9809b73",
+      "html": "https://github.com/github/gitignore/blob/master/Coq.gitignore"
+    }
+  },
+  {
+    "name": "CraftCMS.gitignore",
+    "path": "CraftCMS.gitignore",
+    "sha": "0d81b397e35e2b4f10695a30ac7923daa8421a72",
+    "size": 188,
+    "url": "https://api.github.com/repos/github/gitignore/contents/CraftCMS.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/CraftCMS.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/0d81b397e35e2b4f10695a30ac7923daa8421a72",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/CraftCMS.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/CraftCMS.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/0d81b397e35e2b4f10695a30ac7923daa8421a72",
+      "html": "https://github.com/github/gitignore/blob/master/CraftCMS.gitignore"
+    }
+  },
+  {
+    "name": "D.gitignore",
+    "path": "D.gitignore",
+    "sha": "74b926fc90129d656d623f6b3210503d97c22c6c",
+    "size": 207,
+    "url": "https://api.github.com/repos/github/gitignore/contents/D.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/D.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/74b926fc90129d656d623f6b3210503d97c22c6c",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/D.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/D.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/74b926fc90129d656d623f6b3210503d97c22c6c",
+      "html": "https://github.com/github/gitignore/blob/master/D.gitignore"
+    }
+  },
+  {
+    "name": "DM.gitignore",
+    "path": "DM.gitignore",
+    "sha": "ba5abdab83666220c8dbd5367c9cff1d4898222c",
+    "size": 29,
+    "url": "https://api.github.com/repos/github/gitignore/contents/DM.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/DM.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/ba5abdab83666220c8dbd5367c9cff1d4898222c",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/DM.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/DM.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/ba5abdab83666220c8dbd5367c9cff1d4898222c",
+      "html": "https://github.com/github/gitignore/blob/master/DM.gitignore"
+    }
+  },
+  {
+    "name": "Dart.gitignore",
+    "path": "Dart.gitignore",
+    "sha": "dbef116d224d8f796abe72ecfef9271f9d79f069",
+    "size": 618,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Dart.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Dart.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/dbef116d224d8f796abe72ecfef9271f9d79f069",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Dart.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Dart.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/dbef116d224d8f796abe72ecfef9271f9d79f069",
+      "html": "https://github.com/github/gitignore/blob/master/Dart.gitignore"
+    }
+  },
+  {
+    "name": "Delphi.gitignore",
+    "path": "Delphi.gitignore",
+    "sha": "9532800ba2240f67aff2d6cfa51cf5a9d97d1e26",
+    "size": 1679,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Delphi.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Delphi.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/9532800ba2240f67aff2d6cfa51cf5a9d97d1e26",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Delphi.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Delphi.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/9532800ba2240f67aff2d6cfa51cf5a9d97d1e26",
+      "html": "https://github.com/github/gitignore/blob/master/Delphi.gitignore"
+    }
+  },
+  {
+    "name": "Drupal.gitignore",
+    "path": "Drupal.gitignore",
+    "sha": "1c101273f5553e8a93752b78774e28284be4cfd1",
+    "size": 981,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Drupal.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Drupal.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/1c101273f5553e8a93752b78774e28284be4cfd1",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Drupal.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Drupal.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/1c101273f5553e8a93752b78774e28284be4cfd1",
+      "html": "https://github.com/github/gitignore/blob/master/Drupal.gitignore"
+    }
+  },
+  {
+    "name": "EPiServer.gitignore",
+    "path": "EPiServer.gitignore",
+    "sha": "97037de743e26b47451a693b0c186564c669b4dc",
+    "size": 81,
+    "url": "https://api.github.com/repos/github/gitignore/contents/EPiServer.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/EPiServer.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/97037de743e26b47451a693b0c186564c669b4dc",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/EPiServer.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/EPiServer.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/97037de743e26b47451a693b0c186564c669b4dc",
+      "html": "https://github.com/github/gitignore/blob/master/EPiServer.gitignore"
+    }
+  },
+  {
+    "name": "Eagle.gitignore",
+    "path": "Eagle.gitignore",
+    "sha": "28f0b9715e61afe86dbbfc3312c22c38e6b7c6d6",
+    "size": 517,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Eagle.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Eagle.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/28f0b9715e61afe86dbbfc3312c22c38e6b7c6d6",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Eagle.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Eagle.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/28f0b9715e61afe86dbbfc3312c22c38e6b7c6d6",
+      "html": "https://github.com/github/gitignore/blob/master/Eagle.gitignore"
+    }
+  },
+  {
+    "name": "Elisp.gitignore",
+    "path": "Elisp.gitignore",
+    "sha": "206569dc66128fcd5cad0cbff0ba6de54ea48030",
+    "size": 92,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Elisp.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Elisp.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/206569dc66128fcd5cad0cbff0ba6de54ea48030",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Elisp.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Elisp.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/206569dc66128fcd5cad0cbff0ba6de54ea48030",
+      "html": "https://github.com/github/gitignore/blob/master/Elisp.gitignore"
+    }
+  },
+  {
+    "name": "Elixir.gitignore",
+    "path": "Elixir.gitignore",
+    "sha": "b263cd10f37b2ecd20d0a13a61bc92e60869a27e",
+    "size": 94,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Elixir.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Elixir.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/b263cd10f37b2ecd20d0a13a61bc92e60869a27e",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Elixir.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Elixir.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/b263cd10f37b2ecd20d0a13a61bc92e60869a27e",
+      "html": "https://github.com/github/gitignore/blob/master/Elixir.gitignore"
+    }
+  },
+  {
+    "name": "Elm.gitignore",
+    "path": "Elm.gitignore",
+    "sha": "8b631e7de00937af125d4f143a50fb67c0c8c24c",
+    "size": 79,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Elm.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Elm.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/8b631e7de00937af125d4f143a50fb67c0c8c24c",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Elm.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Elm.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/8b631e7de00937af125d4f143a50fb67c0c8c24c",
+      "html": "https://github.com/github/gitignore/blob/master/Elm.gitignore"
+    }
+  },
+  {
+    "name": "Erlang.gitignore",
+    "path": "Erlang.gitignore",
+    "sha": "3826c85736f8cc3ddbc97449ba3b784a4370428e",
+    "size": 102,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Erlang.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Erlang.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/3826c85736f8cc3ddbc97449ba3b784a4370428e",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Erlang.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Erlang.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/3826c85736f8cc3ddbc97449ba3b784a4370428e",
+      "html": "https://github.com/github/gitignore/blob/master/Erlang.gitignore"
+    }
+  },
+  {
+    "name": "ExpressionEngine.gitignore",
+    "path": "ExpressionEngine.gitignore",
+    "sha": "314e4df123ac81790a9b8035c42f8d7e2d775794",
+    "size": 342,
+    "url": "https://api.github.com/repos/github/gitignore/contents/ExpressionEngine.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/ExpressionEngine.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/314e4df123ac81790a9b8035c42f8d7e2d775794",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/ExpressionEngine.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/ExpressionEngine.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/314e4df123ac81790a9b8035c42f8d7e2d775794",
+      "html": "https://github.com/github/gitignore/blob/master/ExpressionEngine.gitignore"
+    }
+  },
+  {
+    "name": "ExtJs.gitignore",
+    "path": "ExtJs.gitignore",
+    "sha": "ab97a8cc3e11a430d4081ef3ad490be6b416ba9b",
+    "size": 225,
+    "url": "https://api.github.com/repos/github/gitignore/contents/ExtJs.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/ExtJs.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/ab97a8cc3e11a430d4081ef3ad490be6b416ba9b",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/ExtJs.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/ExtJs.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/ab97a8cc3e11a430d4081ef3ad490be6b416ba9b",
+      "html": "https://github.com/github/gitignore/blob/master/ExtJs.gitignore"
+    }
+  },
+  {
+    "name": "Fancy.gitignore",
+    "path": "Fancy.gitignore",
+    "sha": "70d6e631e55268e6bf2f051e37e4856c852a9d1e",
+    "size": 12,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Fancy.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Fancy.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/70d6e631e55268e6bf2f051e37e4856c852a9d1e",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Fancy.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Fancy.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/70d6e631e55268e6bf2f051e37e4856c852a9d1e",
+      "html": "https://github.com/github/gitignore/blob/master/Fancy.gitignore"
+    }
+  },
+  {
+    "name": "Finale.gitignore",
+    "path": "Finale.gitignore",
+    "sha": "7ef08e0c343f2ca3252bd3f78381a9920d70bdd8",
+    "size": 184,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Finale.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Finale.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/7ef08e0c343f2ca3252bd3f78381a9920d70bdd8",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Finale.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Finale.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/7ef08e0c343f2ca3252bd3f78381a9920d70bdd8",
+      "html": "https://github.com/github/gitignore/blob/master/Finale.gitignore"
+    }
+  },
+  {
+    "name": "ForceDotCom.gitignore",
+    "path": "ForceDotCom.gitignore",
+    "sha": "3933cd4dd502f8a47cd5ea9b36293a12348ce12c",
+    "size": 57,
+    "url": "https://api.github.com/repos/github/gitignore/contents/ForceDotCom.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/ForceDotCom.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/3933cd4dd502f8a47cd5ea9b36293a12348ce12c",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/ForceDotCom.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/ForceDotCom.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/3933cd4dd502f8a47cd5ea9b36293a12348ce12c",
+      "html": "https://github.com/github/gitignore/blob/master/ForceDotCom.gitignore"
+    }
+  },
+  {
+    "name": "Fortran.gitignore",
+    "path": "Fortran.gitignore",
+    "sha": "5daba98a3e6c9988fc042b3e191dee32b0f0e4a7",
+    "size": 13,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Fortran.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Fortran.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/5daba98a3e6c9988fc042b3e191dee32b0f0e4a7",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Fortran.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Fortran.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/5daba98a3e6c9988fc042b3e191dee32b0f0e4a7",
+      "html": "https://github.com/github/gitignore/blob/master/Fortran.gitignore"
+    }
+  },
+  {
+    "name": "FuelPHP.gitignore",
+    "path": "FuelPHP.gitignore",
+    "sha": "d69f71f433894b801b796323b64b46ad6116dec7",
+    "size": 648,
+    "url": "https://api.github.com/repos/github/gitignore/contents/FuelPHP.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/FuelPHP.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/d69f71f433894b801b796323b64b46ad6116dec7",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/FuelPHP.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/FuelPHP.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/d69f71f433894b801b796323b64b46ad6116dec7",
+      "html": "https://github.com/github/gitignore/blob/master/FuelPHP.gitignore"
+    }
+  },
+  {
+    "name": "GWT.gitignore",
+    "path": "GWT.gitignore",
+    "sha": "a01e7fcd9219dc5935ff31052e310573e9fb62fd",
+    "size": 343,
+    "url": "https://api.github.com/repos/github/gitignore/contents/GWT.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/GWT.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/a01e7fcd9219dc5935ff31052e310573e9fb62fd",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/GWT.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/GWT.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/a01e7fcd9219dc5935ff31052e310573e9fb62fd",
+      "html": "https://github.com/github/gitignore/blob/master/GWT.gitignore"
+    }
+  },
+  {
+    "name": "Gcov.gitignore",
+    "path": "Gcov.gitignore",
+    "sha": "a6451430e174707029c8fc97467899ed91a42a09",
+    "size": 56,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Gcov.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Gcov.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/a6451430e174707029c8fc97467899ed91a42a09",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Gcov.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Gcov.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/a6451430e174707029c8fc97467899ed91a42a09",
+      "html": "https://github.com/github/gitignore/blob/master/Gcov.gitignore"
+    }
+  },
+  {
+    "name": "GitBook.gitignore",
+    "path": "GitBook.gitignore",
+    "sha": "4cb12d8db77a1f9f11e1f7923b6f6f5075e003cf",
+    "size": 353,
+    "url": "https://api.github.com/repos/github/gitignore/contents/GitBook.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/GitBook.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/4cb12d8db77a1f9f11e1f7923b6f6f5075e003cf",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/GitBook.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/GitBook.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/4cb12d8db77a1f9f11e1f7923b6f6f5075e003cf",
+      "html": "https://github.com/github/gitignore/blob/master/GitBook.gitignore"
+    }
+  },
+  {
+    "name": "Global",
+    "path": "Global",
+    "sha": "e78a357a6ad6953a9216b405f62185447fb3a6b2",
+    "size": 0,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Global?ref=master",
+    "html_url": "https://github.com/github/gitignore/tree/master/Global",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/trees/e78a357a6ad6953a9216b405f62185447fb3a6b2",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Global?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/trees/e78a357a6ad6953a9216b405f62185447fb3a6b2",
+      "html": "https://github.com/github/gitignore/tree/master/Global"
+    }
+  },
+  {
+    "name": "Go.gitignore",
+    "path": "Go.gitignore",
+    "sha": "66fd13c903cac02eb9657cd53fb227823484401d",
+    "size": 269,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Go.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Go.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/66fd13c903cac02eb9657cd53fb227823484401d",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Go.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Go.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/66fd13c903cac02eb9657cd53fb227823484401d",
+      "html": "https://github.com/github/gitignore/blob/master/Go.gitignore"
+    }
+  },
+  {
+    "name": "Godot.gitignore",
+    "path": "Godot.gitignore",
+    "sha": "79d3eb446efdb664340ab8b080588e89599b3129",
+    "size": 105,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Godot.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Godot.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/79d3eb446efdb664340ab8b080588e89599b3129",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Godot.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Godot.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/79d3eb446efdb664340ab8b080588e89599b3129",
+      "html": "https://github.com/github/gitignore/blob/master/Godot.gitignore"
+    }
+  },
+  {
+    "name": "Gradle.gitignore",
+    "path": "Gradle.gitignore",
+    "sha": "a1fc39c070f4f8ba52f278c15cd4d2121d07c8a8",
+    "size": 308,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Gradle.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Gradle.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/a1fc39c070f4f8ba52f278c15cd4d2121d07c8a8",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Gradle.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Gradle.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/a1fc39c070f4f8ba52f278c15cd4d2121d07c8a8",
+      "html": "https://github.com/github/gitignore/blob/master/Gradle.gitignore"
+    }
+  },
+  {
+    "name": "Grails.gitignore",
+    "path": "Grails.gitignore",
+    "sha": "9185f14c37cea61288692c406f086577750b8ec5",
+    "size": 583,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Grails.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Grails.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/9185f14c37cea61288692c406f086577750b8ec5",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Grails.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Grails.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/9185f14c37cea61288692c406f086577750b8ec5",
+      "html": "https://github.com/github/gitignore/blob/master/Grails.gitignore"
+    }
+  },
+  {
+    "name": "Haskell.gitignore",
+    "path": "Haskell.gitignore",
+    "sha": "4c9e245b5d804bf398f9e0eb6c9366774cb404d3",
+    "size": 225,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Haskell.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Haskell.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/4c9e245b5d804bf398f9e0eb6c9366774cb404d3",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Haskell.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Haskell.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/4c9e245b5d804bf398f9e0eb6c9366774cb404d3",
+      "html": "https://github.com/github/gitignore/blob/master/Haskell.gitignore"
+    }
+  },
+  {
+    "name": "IGORPro.gitignore",
+    "path": "IGORPro.gitignore",
+    "sha": "c62be65003661fa515e1301b03e82ecac7a59a94",
+    "size": 121,
+    "url": "https://api.github.com/repos/github/gitignore/contents/IGORPro.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/IGORPro.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/c62be65003661fa515e1301b03e82ecac7a59a94",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/IGORPro.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/IGORPro.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/c62be65003661fa515e1301b03e82ecac7a59a94",
+      "html": "https://github.com/github/gitignore/blob/master/IGORPro.gitignore"
+    }
+  },
+  {
+    "name": "Idris.gitignore",
+    "path": "Idris.gitignore",
+    "sha": "c28bc7cc675f54a316a8944d22674529b9d21210",
+    "size": 10,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Idris.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Idris.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/c28bc7cc675f54a316a8944d22674529b9d21210",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Idris.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Idris.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/c28bc7cc675f54a316a8944d22674529b9d21210",
+      "html": "https://github.com/github/gitignore/blob/master/Idris.gitignore"
+    }
+  },
+  {
+    "name": "JBoss.gitignore",
+    "path": "JBoss.gitignore",
+    "sha": "75d1731ed97a0077c65f77aa8c73ca4bdd9940e1",
+    "size": 509,
+    "url": "https://api.github.com/repos/github/gitignore/contents/JBoss.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/JBoss.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/75d1731ed97a0077c65f77aa8c73ca4bdd9940e1",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/JBoss.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/JBoss.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/75d1731ed97a0077c65f77aa8c73ca4bdd9940e1",
+      "html": "https://github.com/github/gitignore/blob/master/JBoss.gitignore"
+    }
+  },
+  {
+    "name": "JENKINS_HOME.gitignore",
+    "path": "JENKINS_HOME.gitignore",
+    "sha": "6df01d6210536d88b790312f1e2da354decdc7b3",
+    "size": 767,
+    "url": "https://api.github.com/repos/github/gitignore/contents/JENKINS_HOME.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/JENKINS_HOME.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/6df01d6210536d88b790312f1e2da354decdc7b3",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/JENKINS_HOME.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/JENKINS_HOME.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/6df01d6210536d88b790312f1e2da354decdc7b3",
+      "html": "https://github.com/github/gitignore/blob/master/JENKINS_HOME.gitignore"
+    }
+  },
+  {
+    "name": "Java.gitignore",
+    "path": "Java.gitignore",
+    "sha": "a1c2a238a965f004ff76978ac1086aa6fe95caea",
+    "size": 278,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Java.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Java.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/a1c2a238a965f004ff76978ac1086aa6fe95caea",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Java.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Java.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/a1c2a238a965f004ff76978ac1086aa6fe95caea",
+      "html": "https://github.com/github/gitignore/blob/master/Java.gitignore"
+    }
+  },
+  {
+    "name": "Jekyll.gitignore",
+    "path": "Jekyll.gitignore",
+    "sha": "2ca868298ced3ff66aa1a7a42a23c3360d11ef41",
+    "size": 52,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Jekyll.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Jekyll.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/2ca868298ced3ff66aa1a7a42a23c3360d11ef41",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Jekyll.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Jekyll.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/2ca868298ced3ff66aa1a7a42a23c3360d11ef41",
+      "html": "https://github.com/github/gitignore/blob/master/Jekyll.gitignore"
+    }
+  },
+  {
+    "name": "Joomla.gitignore",
+    "path": "Joomla.gitignore",
+    "sha": "41a9ba415c52a4fd0e21b49284ffad12c780ccec",
+    "size": 31043,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Joomla.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Joomla.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/41a9ba415c52a4fd0e21b49284ffad12c780ccec",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Joomla.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Joomla.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/41a9ba415c52a4fd0e21b49284ffad12c780ccec",
+      "html": "https://github.com/github/gitignore/blob/master/Joomla.gitignore"
+    }
+  },
+  {
+    "name": "Julia.gitignore",
+    "path": "Julia.gitignore",
+    "sha": "29126e47b08bb2736f2c77513c0439aeb3192780",
+    "size": 795,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Julia.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Julia.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/29126e47b08bb2736f2c77513c0439aeb3192780",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Julia.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Julia.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/29126e47b08bb2736f2c77513c0439aeb3192780",
+      "html": "https://github.com/github/gitignore/blob/master/Julia.gitignore"
+    }
+  },
+  {
+    "name": "KiCad.gitignore",
+    "path": "KiCad.gitignore",
+    "sha": "853ee63f784d6a3d55fe11073782aba65d4843d9",
+    "size": 386,
+    "url": "https://api.github.com/repos/github/gitignore/contents/KiCad.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/KiCad.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/853ee63f784d6a3d55fe11073782aba65d4843d9",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/KiCad.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/KiCad.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/853ee63f784d6a3d55fe11073782aba65d4843d9",
+      "html": "https://github.com/github/gitignore/blob/master/KiCad.gitignore"
+    }
+  },
+  {
+    "name": "Kohana.gitignore",
+    "path": "Kohana.gitignore",
+    "sha": "8b2ab01a8004afafdcc3c50f0faed4a7eb0b64f6",
+    "size": 39,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Kohana.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Kohana.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/8b2ab01a8004afafdcc3c50f0faed4a7eb0b64f6",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Kohana.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Kohana.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/8b2ab01a8004afafdcc3c50f0faed4a7eb0b64f6",
+      "html": "https://github.com/github/gitignore/blob/master/Kohana.gitignore"
+    }
+  },
+  {
+    "name": "Kotlin.gitignore",
+    "path": "Kotlin.gitignore",
+    "sha": "c48376eebcf1d33fcdd86f4c24ba317336e12324",
+    "size": 14,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Kotlin.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Kotlin.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/c48376eebcf1d33fcdd86f4c24ba317336e12324",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Kotlin.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Kotlin.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/c48376eebcf1d33fcdd86f4c24ba317336e12324",
+      "html": "https://github.com/github/gitignore/blob/master/Kotlin.gitignore"
+    }
+  },
+  {
+    "name": "LICENSE",
+    "path": "LICENSE",
+    "sha": "670154e3538863b2d9891fd5483160fbdfc89164",
+    "size": 6555,
+    "url": "https://api.github.com/repos/github/gitignore/contents/LICENSE?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/LICENSE",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/670154e3538863b2d9891fd5483160fbdfc89164",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/LICENSE",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/LICENSE?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/670154e3538863b2d9891fd5483160fbdfc89164",
+      "html": "https://github.com/github/gitignore/blob/master/LICENSE"
+    }
+  },
+  {
+    "name": "LabVIEW.gitignore",
+    "path": "LabVIEW.gitignore",
+    "sha": "31619f598145afae2c882332df1811614d444a43",
+    "size": 150,
+    "url": "https://api.github.com/repos/github/gitignore/contents/LabVIEW.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/LabVIEW.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/31619f598145afae2c882332df1811614d444a43",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/LabVIEW.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/LabVIEW.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/31619f598145afae2c882332df1811614d444a43",
+      "html": "https://github.com/github/gitignore/blob/master/LabVIEW.gitignore"
+    }
+  },
+  {
+    "name": "Laravel.gitignore",
+    "path": "Laravel.gitignore",
+    "sha": "297959a19e5bda9ce4a16ae070493393b2eee837",
+    "size": 339,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Laravel.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Laravel.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/297959a19e5bda9ce4a16ae070493393b2eee837",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Laravel.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Laravel.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/297959a19e5bda9ce4a16ae070493393b2eee837",
+      "html": "https://github.com/github/gitignore/blob/master/Laravel.gitignore"
+    }
+  },
+  {
+    "name": "Leiningen.gitignore",
+    "path": "Leiningen.gitignore",
+    "sha": "a4cb69a32cccf287d2e818c80ba5be860a0767f4",
+    "size": 157,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Leiningen.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Leiningen.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/a4cb69a32cccf287d2e818c80ba5be860a0767f4",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Leiningen.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Leiningen.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/a4cb69a32cccf287d2e818c80ba5be860a0767f4",
+      "html": "https://github.com/github/gitignore/blob/master/Leiningen.gitignore"
+    }
+  },
+  {
+    "name": "LemonStand.gitignore",
+    "path": "LemonStand.gitignore",
+    "sha": "c7d94ad34b06f7e11238d19b6bd60361d4eebced",
+    "size": 348,
+    "url": "https://api.github.com/repos/github/gitignore/contents/LemonStand.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/LemonStand.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/c7d94ad34b06f7e11238d19b6bd60361d4eebced",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/LemonStand.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/LemonStand.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/c7d94ad34b06f7e11238d19b6bd60361d4eebced",
+      "html": "https://github.com/github/gitignore/blob/master/LemonStand.gitignore"
+    }
+  },
+  {
+    "name": "Lilypond.gitignore",
+    "path": "Lilypond.gitignore",
+    "sha": "513e6edd9c4a5bda43eb376c2f9a5d318eb135ec",
+    "size": 33,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Lilypond.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Lilypond.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/513e6edd9c4a5bda43eb376c2f9a5d318eb135ec",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Lilypond.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Lilypond.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/513e6edd9c4a5bda43eb376c2f9a5d318eb135ec",
+      "html": "https://github.com/github/gitignore/blob/master/Lilypond.gitignore"
+    }
+  },
+  {
+    "name": "Lithium.gitignore",
+    "path": "Lithium.gitignore",
+    "sha": "7b22568ea890623c6c43f242ecd5bb0ac5ece6cf",
+    "size": 28,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Lithium.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Lithium.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/7b22568ea890623c6c43f242ecd5bb0ac5ece6cf",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Lithium.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Lithium.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/7b22568ea890623c6c43f242ecd5bb0ac5ece6cf",
+      "html": "https://github.com/github/gitignore/blob/master/Lithium.gitignore"
+    }
+  },
+  {
+    "name": "Lua.gitignore",
+    "path": "Lua.gitignore",
+    "sha": "6fd0a376decfbf0a7be87fdc75d5109da72a7d17",
+    "size": 324,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Lua.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Lua.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/6fd0a376decfbf0a7be87fdc75d5109da72a7d17",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Lua.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Lua.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/6fd0a376decfbf0a7be87fdc75d5109da72a7d17",
+      "html": "https://github.com/github/gitignore/blob/master/Lua.gitignore"
+    }
+  },
+  {
+    "name": "Magento.gitignore",
+    "path": "Magento.gitignore",
+    "sha": "abe6d79fedbbd46a143ff4f26a6ae7fad20afe09",
+    "size": 715,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Magento.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Magento.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/abe6d79fedbbd46a143ff4f26a6ae7fad20afe09",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Magento.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Magento.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/abe6d79fedbbd46a143ff4f26a6ae7fad20afe09",
+      "html": "https://github.com/github/gitignore/blob/master/Magento.gitignore"
+    }
+  },
+  {
+    "name": "Maven.gitignore",
+    "path": "Maven.gitignore",
+    "sha": "0e13eebbeaada93aed5cfa8578698f950d09e8ae",
+    "size": 268,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Maven.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Maven.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/0e13eebbeaada93aed5cfa8578698f950d09e8ae",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Maven.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Maven.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/0e13eebbeaada93aed5cfa8578698f950d09e8ae",
+      "html": "https://github.com/github/gitignore/blob/master/Maven.gitignore"
+    }
+  },
+  {
+    "name": "Mercury.gitignore",
+    "path": "Mercury.gitignore",
+    "sha": "70ec86939718241f046522a8cc0143d5deeecaea",
+    "size": 93,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Mercury.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Mercury.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/70ec86939718241f046522a8cc0143d5deeecaea",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Mercury.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Mercury.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/70ec86939718241f046522a8cc0143d5deeecaea",
+      "html": "https://github.com/github/gitignore/blob/master/Mercury.gitignore"
+    }
+  },
+  {
+    "name": "MetaProgrammingSystem.gitignore",
+    "path": "MetaProgrammingSystem.gitignore",
+    "sha": "3e75841041c283547b25fdc71e35f347f366518e",
+    "size": 391,
+    "url": "https://api.github.com/repos/github/gitignore/contents/MetaProgrammingSystem.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/MetaProgrammingSystem.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/3e75841041c283547b25fdc71e35f347f366518e",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/MetaProgrammingSystem.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/MetaProgrammingSystem.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/3e75841041c283547b25fdc71e35f347f366518e",
+      "html": "https://github.com/github/gitignore/blob/master/MetaProgrammingSystem.gitignore"
+    }
+  },
+  {
+    "name": "Nanoc.gitignore",
+    "path": "Nanoc.gitignore",
+    "sha": "6f35daaf4782872165883d0dbca3bd6743892306",
+    "size": 203,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Nanoc.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Nanoc.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/6f35daaf4782872165883d0dbca3bd6743892306",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Nanoc.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Nanoc.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/6f35daaf4782872165883d0dbca3bd6743892306",
+      "html": "https://github.com/github/gitignore/blob/master/Nanoc.gitignore"
+    }
+  },
+  {
+    "name": "Nim.gitignore",
+    "path": "Nim.gitignore",
+    "sha": "32e1dc0fdec7f15dec4fa2940ed5a02bb76ce2f1",
+    "size": 33,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Nim.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Nim.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/32e1dc0fdec7f15dec4fa2940ed5a02bb76ce2f1",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Nim.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Nim.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/32e1dc0fdec7f15dec4fa2940ed5a02bb76ce2f1",
+      "html": "https://github.com/github/gitignore/blob/master/Nim.gitignore"
+    }
+  },
+  {
+    "name": "Node.gitignore",
+    "path": "Node.gitignore",
+    "sha": "ed0d3c87dd3837e9ac2e9fc2760a91d95c70a4d4",
+    "size": 1308,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Node.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Node.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/ed0d3c87dd3837e9ac2e9fc2760a91d95c70a4d4",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Node.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/ed0d3c87dd3837e9ac2e9fc2760a91d95c70a4d4",
+      "html": "https://github.com/github/gitignore/blob/master/Node.gitignore"
+    }
+  },
+  {
+    "name": "OCaml.gitignore",
+    "path": "OCaml.gitignore",
+    "sha": "a18e08402bb7d142966b692999d2a104d8f4d072",
+    "size": 293,
+    "url": "https://api.github.com/repos/github/gitignore/contents/OCaml.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/OCaml.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/a18e08402bb7d142966b692999d2a104d8f4d072",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/OCaml.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/OCaml.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/a18e08402bb7d142966b692999d2a104d8f4d072",
+      "html": "https://github.com/github/gitignore/blob/master/OCaml.gitignore"
+    }
+  },
+  {
+    "name": "Objective-C.gitignore",
+    "path": "Objective-C.gitignore",
+    "sha": "7801c930004221b0b271301be2fe4703ead5a092",
+    "size": 1665,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Objective-C.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Objective-C.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/7801c930004221b0b271301be2fe4703ead5a092",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Objective-C.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Objective-C.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/7801c930004221b0b271301be2fe4703ead5a092",
+      "html": "https://github.com/github/gitignore/blob/master/Objective-C.gitignore"
+    }
+  },
+  {
+    "name": "Opa.gitignore",
+    "path": "Opa.gitignore",
+    "sha": "74c6219ceda9291aec7f74386d27ec7b75580844",
+    "size": 90,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Opa.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Opa.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/74c6219ceda9291aec7f74386d27ec7b75580844",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Opa.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Opa.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/74c6219ceda9291aec7f74386d27ec7b75580844",
+      "html": "https://github.com/github/gitignore/blob/master/Opa.gitignore"
+    }
+  },
+  {
+    "name": "OpenCart.gitignore",
+    "path": "OpenCart.gitignore",
+    "sha": "97be41faa387f53ec974ea83d42321af7c65e901",
+    "size": 237,
+    "url": "https://api.github.com/repos/github/gitignore/contents/OpenCart.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/OpenCart.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/97be41faa387f53ec974ea83d42321af7c65e901",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/OpenCart.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/OpenCart.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/97be41faa387f53ec974ea83d42321af7c65e901",
+      "html": "https://github.com/github/gitignore/blob/master/OpenCart.gitignore"
+    }
+  },
+  {
+    "name": "OracleForms.gitignore",
+    "path": "OracleForms.gitignore",
+    "sha": "699a494011875395b4247a15bbcb909f1b38e5a7",
+    "size": 100,
+    "url": "https://api.github.com/repos/github/gitignore/contents/OracleForms.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/OracleForms.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/699a494011875395b4247a15bbcb909f1b38e5a7",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/OracleForms.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/OracleForms.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/699a494011875395b4247a15bbcb909f1b38e5a7",
+      "html": "https://github.com/github/gitignore/blob/master/OracleForms.gitignore"
+    }
+  },
+  {
+    "name": "Packer.gitignore",
+    "path": "Packer.gitignore",
+    "sha": "1b7a03efdd72ff50f9e4c725720ea6ccad2b8174",
+    "size": 55,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Packer.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Packer.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/1b7a03efdd72ff50f9e4c725720ea6ccad2b8174",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Packer.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Packer.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/1b7a03efdd72ff50f9e4c725720ea6ccad2b8174",
+      "html": "https://github.com/github/gitignore/blob/master/Packer.gitignore"
+    }
+  },
+  {
+    "name": "Perl.gitignore",
+    "path": "Perl.gitignore",
+    "sha": "ecf66f8429154ee03dee387d99afd4bc670e270a",
+    "size": 321,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Perl.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Perl.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/ecf66f8429154ee03dee387d99afd4bc670e270a",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Perl.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Perl.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/ecf66f8429154ee03dee387d99afd4bc670e270a",
+      "html": "https://github.com/github/gitignore/blob/master/Perl.gitignore"
+    }
+  },
+  {
+    "name": "Perl6.gitignore",
+    "path": "Perl6.gitignore",
+    "sha": "7b2c018a56261dbdada6145ce12bd3b1ad3b53d9",
+    "size": 139,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Perl6.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Perl6.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/7b2c018a56261dbdada6145ce12bd3b1ad3b53d9",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Perl6.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Perl6.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/7b2c018a56261dbdada6145ce12bd3b1ad3b53d9",
+      "html": "https://github.com/github/gitignore/blob/master/Perl6.gitignore"
+    }
+  },
+  {
+    "name": "Phalcon.gitignore",
+    "path": "Phalcon.gitignore",
+    "sha": "6ffe3aa220a9838f75900cf00e755ced29859d7a",
+    "size": 29,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Phalcon.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Phalcon.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/6ffe3aa220a9838f75900cf00e755ced29859d7a",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Phalcon.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Phalcon.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/6ffe3aa220a9838f75900cf00e755ced29859d7a",
+      "html": "https://github.com/github/gitignore/blob/master/Phalcon.gitignore"
+    }
+  },
+  {
+    "name": "PlayFramework.gitignore",
+    "path": "PlayFramework.gitignore",
+    "sha": "ae5ec9fe1d9fb888c1ab3d2fac9fe15868505e5c",
+    "size": 164,
+    "url": "https://api.github.com/repos/github/gitignore/contents/PlayFramework.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/PlayFramework.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/ae5ec9fe1d9fb888c1ab3d2fac9fe15868505e5c",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/PlayFramework.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/PlayFramework.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/ae5ec9fe1d9fb888c1ab3d2fac9fe15868505e5c",
+      "html": "https://github.com/github/gitignore/blob/master/PlayFramework.gitignore"
+    }
+  },
+  {
+    "name": "Plone.gitignore",
+    "path": "Plone.gitignore",
+    "sha": "770a8681ac36ee996cb0a45a1ff90e160f4ba267",
+    "size": 137,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Plone.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Plone.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/770a8681ac36ee996cb0a45a1ff90e160f4ba267",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Plone.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Plone.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/770a8681ac36ee996cb0a45a1ff90e160f4ba267",
+      "html": "https://github.com/github/gitignore/blob/master/Plone.gitignore"
+    }
+  },
+  {
+    "name": "Prestashop.gitignore",
+    "path": "Prestashop.gitignore",
+    "sha": "81f45e19ebad89ef88dc18894e0cda122808a18d",
+    "size": 680,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Prestashop.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Prestashop.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/81f45e19ebad89ef88dc18894e0cda122808a18d",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Prestashop.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Prestashop.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/81f45e19ebad89ef88dc18894e0cda122808a18d",
+      "html": "https://github.com/github/gitignore/blob/master/Prestashop.gitignore"
+    }
+  },
+  {
+    "name": "Processing.gitignore",
+    "path": "Processing.gitignore",
+    "sha": "942ebbccb5de847b95c94c8c6430bc97bdfefee0",
+    "size": 174,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Processing.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Processing.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/942ebbccb5de847b95c94c8c6430bc97bdfefee0",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Processing.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Processing.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/942ebbccb5de847b95c94c8c6430bc97bdfefee0",
+      "html": "https://github.com/github/gitignore/blob/master/Processing.gitignore"
+    }
+  },
+  {
+    "name": "PureScript.gitignore",
+    "path": "PureScript.gitignore",
+    "sha": "361cf5277bac46a06e8fba833a1150a58209bb54",
+    "size": 91,
+    "url": "https://api.github.com/repos/github/gitignore/contents/PureScript.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/PureScript.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/361cf5277bac46a06e8fba833a1150a58209bb54",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/PureScript.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/PureScript.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/361cf5277bac46a06e8fba833a1150a58209bb54",
+      "html": "https://github.com/github/gitignore/blob/master/PureScript.gitignore"
+    }
+  },
+  {
+    "name": "Python.gitignore",
+    "path": "Python.gitignore",
+    "sha": "c0c219be58d95f4851ae22d8869fbcc47a5d0b29",
+    "size": 1713,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Python.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Python.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/c0c219be58d95f4851ae22d8869fbcc47a5d0b29",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Python.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/c0c219be58d95f4851ae22d8869fbcc47a5d0b29",
+      "html": "https://github.com/github/gitignore/blob/master/Python.gitignore"
+    }
+  },
+  {
+    "name": "Qooxdoo.gitignore",
+    "path": "Qooxdoo.gitignore",
+    "sha": "d0c64102d85bb01cabfe12c34a5639e00c78060d",
+    "size": 58,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Qooxdoo.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Qooxdoo.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/d0c64102d85bb01cabfe12c34a5639e00c78060d",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Qooxdoo.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Qooxdoo.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/d0c64102d85bb01cabfe12c34a5639e00c78060d",
+      "html": "https://github.com/github/gitignore/blob/master/Qooxdoo.gitignore"
+    }
+  },
+  {
+    "name": "Qt.gitignore",
+    "path": "Qt.gitignore",
+    "sha": "15361cf5aa0ad98af9c26b5c6aaa837adc49faa2",
+    "size": 590,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Qt.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Qt.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/15361cf5aa0ad98af9c26b5c6aaa837adc49faa2",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Qt.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Qt.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/15361cf5aa0ad98af9c26b5c6aaa837adc49faa2",
+      "html": "https://github.com/github/gitignore/blob/master/Qt.gitignore"
+    }
+  },
+  {
+    "name": "R.gitignore",
+    "path": "R.gitignore",
+    "sha": "f5b98bb2f80c40edf569bedfb4dc0982b9a92be7",
+    "size": 533,
+    "url": "https://api.github.com/repos/github/gitignore/contents/R.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/R.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/f5b98bb2f80c40edf569bedfb4dc0982b9a92be7",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/R.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/R.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/f5b98bb2f80c40edf569bedfb4dc0982b9a92be7",
+      "html": "https://github.com/github/gitignore/blob/master/R.gitignore"
+    }
+  },
+  {
+    "name": "README.md",
+    "path": "README.md",
+    "sha": "db171347602d26a3fc4457dfc2a82d459c5393de",
+    "size": 7021,
+    "url": "https://api.github.com/repos/github/gitignore/contents/README.md?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/README.md",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/db171347602d26a3fc4457dfc2a82d459c5393de",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/README.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/README.md?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/db171347602d26a3fc4457dfc2a82d459c5393de",
+      "html": "https://github.com/github/gitignore/blob/master/README.md"
+    }
+  },
+  {
+    "name": "ROS.gitignore",
+    "path": "ROS.gitignore",
+    "sha": "35d74bb771f5ef74aa1259a9e472c379e4d58d86",
+    "size": 538,
+    "url": "https://api.github.com/repos/github/gitignore/contents/ROS.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/ROS.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/35d74bb771f5ef74aa1259a9e472c379e4d58d86",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/ROS.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/ROS.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/35d74bb771f5ef74aa1259a9e472c379e4d58d86",
+      "html": "https://github.com/github/gitignore/blob/master/ROS.gitignore"
+    }
+  },
+  {
+    "name": "Rails.gitignore",
+    "path": "Rails.gitignore",
+    "sha": "902de7a35fefa1d04368efb5c696001346ad75cc",
+    "size": 1308,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Rails.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Rails.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/902de7a35fefa1d04368efb5c696001346ad75cc",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Rails.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Rails.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/902de7a35fefa1d04368efb5c696001346ad75cc",
+      "html": "https://github.com/github/gitignore/blob/master/Rails.gitignore"
+    }
+  },
+  {
+    "name": "RhodesRhomobile.gitignore",
+    "path": "RhodesRhomobile.gitignore",
+    "sha": "a211dcc3b0f7f791892ebc2a21048982403a5efc",
+    "size": 77,
+    "url": "https://api.github.com/repos/github/gitignore/contents/RhodesRhomobile.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/RhodesRhomobile.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/a211dcc3b0f7f791892ebc2a21048982403a5efc",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/RhodesRhomobile.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/RhodesRhomobile.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/a211dcc3b0f7f791892ebc2a21048982403a5efc",
+      "html": "https://github.com/github/gitignore/blob/master/RhodesRhomobile.gitignore"
+    }
+  },
+  {
+    "name": "Ruby.gitignore",
+    "path": "Ruby.gitignore",
+    "sha": "969669658583a4fb641a08f1614d876d6562092b",
+    "size": 1105,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Ruby.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Ruby.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/969669658583a4fb641a08f1614d876d6562092b",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Ruby.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Ruby.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/969669658583a4fb641a08f1614d876d6562092b",
+      "html": "https://github.com/github/gitignore/blob/master/Ruby.gitignore"
+    }
+  },
+  {
+    "name": "Rust.gitignore",
+    "path": "Rust.gitignore",
+    "sha": "088ba6ba7d345b76aa2b8dc021dd25e1323189b3",
+    "size": 320,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Rust.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Rust.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/088ba6ba7d345b76aa2b8dc021dd25e1323189b3",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Rust.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Rust.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/088ba6ba7d345b76aa2b8dc021dd25e1323189b3",
+      "html": "https://github.com/github/gitignore/blob/master/Rust.gitignore"
+    }
+  },
+  {
+    "name": "SCons.gitignore",
+    "path": "SCons.gitignore",
+    "sha": "84eee81b080e6927334253d6ceba93efcdf4bca4",
+    "size": 158,
+    "url": "https://api.github.com/repos/github/gitignore/contents/SCons.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/SCons.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/84eee81b080e6927334253d6ceba93efcdf4bca4",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/SCons.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/SCons.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/84eee81b080e6927334253d6ceba93efcdf4bca4",
+      "html": "https://github.com/github/gitignore/blob/master/SCons.gitignore"
+    }
+  },
+  {
+    "name": "Sass.gitignore",
+    "path": "Sass.gitignore",
+    "sha": "159f515170b8ff415671ce5f26746b62aacf1558",
+    "size": 45,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Sass.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Sass.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/159f515170b8ff415671ce5f26746b62aacf1558",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Sass.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Sass.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/159f515170b8ff415671ce5f26746b62aacf1558",
+      "html": "https://github.com/github/gitignore/blob/master/Sass.gitignore"
+    }
+  },
+  {
+    "name": "Scala.gitignore",
+    "path": "Scala.gitignore",
+    "sha": "9c07d4ae98846cc6160759718b195afc884ee605",
+    "size": 14,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Scala.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Scala.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/9c07d4ae98846cc6160759718b195afc884ee605",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Scala.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Scala.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/9c07d4ae98846cc6160759718b195afc884ee605",
+      "html": "https://github.com/github/gitignore/blob/master/Scala.gitignore"
+    }
+  },
+  {
+    "name": "Scheme.gitignore",
+    "path": "Scheme.gitignore",
+    "sha": "cbb89d78da51cb0087893b4069218550a6cd2886",
+    "size": 44,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Scheme.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Scheme.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/cbb89d78da51cb0087893b4069218550a6cd2886",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Scheme.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Scheme.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/cbb89d78da51cb0087893b4069218550a6cd2886",
+      "html": "https://github.com/github/gitignore/blob/master/Scheme.gitignore"
+    }
+  },
+  {
+    "name": "Scrivener.gitignore",
+    "path": "Scrivener.gitignore",
+    "sha": "3b39c66ba12347c2d598eb7a27a2fda86feb7b87",
+    "size": 140,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Scrivener.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Scrivener.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/3b39c66ba12347c2d598eb7a27a2fda86feb7b87",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Scrivener.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Scrivener.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/3b39c66ba12347c2d598eb7a27a2fda86feb7b87",
+      "html": "https://github.com/github/gitignore/blob/master/Scrivener.gitignore"
+    }
+  },
+  {
+    "name": "Sdcc.gitignore",
+    "path": "Sdcc.gitignore",
+    "sha": "07ee7d59abafb0f5ab798356e8c2302574f7455a",
+    "size": 55,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Sdcc.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Sdcc.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/07ee7d59abafb0f5ab798356e8c2302574f7455a",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Sdcc.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Sdcc.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/07ee7d59abafb0f5ab798356e8c2302574f7455a",
+      "html": "https://github.com/github/gitignore/blob/master/Sdcc.gitignore"
+    }
+  },
+  {
+    "name": "SeamGen.gitignore",
+    "path": "SeamGen.gitignore",
+    "sha": "a418cf376c573a7923af942bccea53c3d512dfab",
+    "size": 961,
+    "url": "https://api.github.com/repos/github/gitignore/contents/SeamGen.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/SeamGen.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/a418cf376c573a7923af942bccea53c3d512dfab",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/SeamGen.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/SeamGen.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/a418cf376c573a7923af942bccea53c3d512dfab",
+      "html": "https://github.com/github/gitignore/blob/master/SeamGen.gitignore"
+    }
+  },
+  {
+    "name": "SketchUp.gitignore",
+    "path": "SketchUp.gitignore",
+    "sha": "5160df3c6bf8b351360ec6b4ff45003c84021cfe",
+    "size": 6,
+    "url": "https://api.github.com/repos/github/gitignore/contents/SketchUp.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/SketchUp.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/5160df3c6bf8b351360ec6b4ff45003c84021cfe",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/SketchUp.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/SketchUp.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/5160df3c6bf8b351360ec6b4ff45003c84021cfe",
+      "html": "https://github.com/github/gitignore/blob/master/SketchUp.gitignore"
+    }
+  },
+  {
+    "name": "Smalltalk.gitignore",
+    "path": "Smalltalk.gitignore",
+    "sha": "178d87af45bcb405789bda095443f839827a5de5",
+    "size": 388,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Smalltalk.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Smalltalk.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/178d87af45bcb405789bda095443f839827a5de5",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Smalltalk.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Smalltalk.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/178d87af45bcb405789bda095443f839827a5de5",
+      "html": "https://github.com/github/gitignore/blob/master/Smalltalk.gitignore"
+    }
+  },
+  {
+    "name": "Stella.gitignore",
+    "path": "Stella.gitignore",
+    "sha": "402a5438373542b72f749cc17b6901fa9372012e",
+    "size": 207,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Stella.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Stella.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/402a5438373542b72f749cc17b6901fa9372012e",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Stella.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Stella.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/402a5438373542b72f749cc17b6901fa9372012e",
+      "html": "https://github.com/github/gitignore/blob/master/Stella.gitignore"
+    }
+  },
+  {
+    "name": "SugarCRM.gitignore",
+    "path": "SugarCRM.gitignore",
+    "sha": "6a183d1c748522dd2a6c4411de27d8fee9c5cac8",
+    "size": 775,
+    "url": "https://api.github.com/repos/github/gitignore/contents/SugarCRM.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/SugarCRM.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/6a183d1c748522dd2a6c4411de27d8fee9c5cac8",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/SugarCRM.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/SugarCRM.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/6a183d1c748522dd2a6c4411de27d8fee9c5cac8",
+      "html": "https://github.com/github/gitignore/blob/master/SugarCRM.gitignore"
+    }
+  },
+  {
+    "name": "Swift.gitignore",
+    "path": "Swift.gitignore",
+    "sha": "330d1674f347b629e102677ac03d3bc87315a55c",
+    "size": 2171,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Swift.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Swift.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/330d1674f347b629e102677ac03d3bc87315a55c",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Swift.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Swift.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/330d1674f347b629e102677ac03d3bc87315a55c",
+      "html": "https://github.com/github/gitignore/blob/master/Swift.gitignore"
+    }
+  },
+  {
+    "name": "Symfony.gitignore",
+    "path": "Symfony.gitignore",
+    "sha": "3dab634c1880d59f5d3c82cfcc74948c5570f9c3",
+    "size": 799,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Symfony.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Symfony.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/3dab634c1880d59f5d3c82cfcc74948c5570f9c3",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Symfony.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Symfony.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/3dab634c1880d59f5d3c82cfcc74948c5570f9c3",
+      "html": "https://github.com/github/gitignore/blob/master/Symfony.gitignore"
+    }
+  },
+  {
+    "name": "SymphonyCMS.gitignore",
+    "path": "SymphonyCMS.gitignore",
+    "sha": "671c7ff9e32680d0a0ecf05dfc2c126f7023ca7f",
+    "size": 90,
+    "url": "https://api.github.com/repos/github/gitignore/contents/SymphonyCMS.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/SymphonyCMS.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/671c7ff9e32680d0a0ecf05dfc2c126f7023ca7f",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/SymphonyCMS.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/SymphonyCMS.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/671c7ff9e32680d0a0ecf05dfc2c126f7023ca7f",
+      "html": "https://github.com/github/gitignore/blob/master/SymphonyCMS.gitignore"
+    }
+  },
+  {
+    "name": "TeX.gitignore",
+    "path": "TeX.gitignore",
+    "sha": "cff4f61b5af860954de349a2999336eb32141fb9",
+    "size": 2662,
+    "url": "https://api.github.com/repos/github/gitignore/contents/TeX.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/TeX.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/cff4f61b5af860954de349a2999336eb32141fb9",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/TeX.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/TeX.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/cff4f61b5af860954de349a2999336eb32141fb9",
+      "html": "https://github.com/github/gitignore/blob/master/TeX.gitignore"
+    }
+  },
+  {
+    "name": "Terraform.gitignore",
+    "path": "Terraform.gitignore",
+    "sha": "7a3e2fd0945d0099d4f7604518b7e863c57069c0",
+    "size": 716,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Terraform.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Terraform.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/7a3e2fd0945d0099d4f7604518b7e863c57069c0",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Terraform.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Terraform.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/7a3e2fd0945d0099d4f7604518b7e863c57069c0",
+      "html": "https://github.com/github/gitignore/blob/master/Terraform.gitignore"
+    }
+  },
+  {
+    "name": "Textpattern.gitignore",
+    "path": "Textpattern.gitignore",
+    "sha": "3805636d622db10fc13f283bcb0613336d7b6eca",
+    "size": 177,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Textpattern.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Textpattern.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/3805636d622db10fc13f283bcb0613336d7b6eca",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Textpattern.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Textpattern.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/3805636d622db10fc13f283bcb0613336d7b6eca",
+      "html": "https://github.com/github/gitignore/blob/master/Textpattern.gitignore"
+    }
+  },
+  {
+    "name": "TurboGears2.gitignore",
+    "path": "TurboGears2.gitignore",
+    "sha": "122b3de221fee44327ae71f8610e96361db3bdc7",
+    "size": 202,
+    "url": "https://api.github.com/repos/github/gitignore/contents/TurboGears2.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/TurboGears2.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/122b3de221fee44327ae71f8610e96361db3bdc7",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/TurboGears2.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/TurboGears2.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/122b3de221fee44327ae71f8610e96361db3bdc7",
+      "html": "https://github.com/github/gitignore/blob/master/TurboGears2.gitignore"
+    }
+  },
+  {
+    "name": "Typo3.gitignore",
+    "path": "Typo3.gitignore",
+    "sha": "200c2a2bf79dee7d80ffdefaefaf4308d177a5d1",
+    "size": 514,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Typo3.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Typo3.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/200c2a2bf79dee7d80ffdefaefaf4308d177a5d1",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Typo3.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Typo3.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/200c2a2bf79dee7d80ffdefaefaf4308d177a5d1",
+      "html": "https://github.com/github/gitignore/blob/master/Typo3.gitignore"
+    }
+  },
+  {
+    "name": "Umbraco.gitignore",
+    "path": "Umbraco.gitignore",
+    "sha": "cd90af3071a70e37fabca1fb470a193fb4dc0627",
+    "size": 785,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Umbraco.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Umbraco.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/cd90af3071a70e37fabca1fb470a193fb4dc0627",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Umbraco.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Umbraco.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/cd90af3071a70e37fabca1fb470a193fb4dc0627",
+      "html": "https://github.com/github/gitignore/blob/master/Umbraco.gitignore"
+    }
+  },
+  {
+    "name": "Unity.gitignore",
+    "path": "Unity.gitignore",
+    "sha": "6efde0589c7a8946da6a9c2a17d0cc6f338e6987",
+    "size": 965,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Unity.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Unity.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/6efde0589c7a8946da6a9c2a17d0cc6f338e6987",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Unity.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Unity.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/6efde0589c7a8946da6a9c2a17d0cc6f338e6987",
+      "html": "https://github.com/github/gitignore/blob/master/Unity.gitignore"
+    }
+  },
+  {
+    "name": "UnrealEngine.gitignore",
+    "path": "UnrealEngine.gitignore",
+    "sha": "6582eaf9a113bb6b9e653abe1df8e5db0f87708c",
+    "size": 946,
+    "url": "https://api.github.com/repos/github/gitignore/contents/UnrealEngine.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/UnrealEngine.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/6582eaf9a113bb6b9e653abe1df8e5db0f87708c",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/UnrealEngine.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/UnrealEngine.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/6582eaf9a113bb6b9e653abe1df8e5db0f87708c",
+      "html": "https://github.com/github/gitignore/blob/master/UnrealEngine.gitignore"
+    }
+  },
+  {
+    "name": "VVVV.gitignore",
+    "path": "VVVV.gitignore",
+    "sha": "5df4324603e0cd5f096e56a3a669f962cbde4509",
+    "size": 57,
+    "url": "https://api.github.com/repos/github/gitignore/contents/VVVV.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/VVVV.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/5df4324603e0cd5f096e56a3a669f962cbde4509",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/VVVV.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/VVVV.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/5df4324603e0cd5f096e56a3a669f962cbde4509",
+      "html": "https://github.com/github/gitignore/blob/master/VVVV.gitignore"
+    }
+  },
+  {
+    "name": "VisualStudio.gitignore",
+    "path": "VisualStudio.gitignore",
+    "sha": "62e4e8f2e152275bc25fdfdad1590d4488023ec4",
+    "size": 6039,
+    "url": "https://api.github.com/repos/github/gitignore/contents/VisualStudio.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/VisualStudio.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/62e4e8f2e152275bc25fdfdad1590d4488023ec4",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/VisualStudio.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/VisualStudio.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/62e4e8f2e152275bc25fdfdad1590d4488023ec4",
+      "html": "https://github.com/github/gitignore/blob/master/VisualStudio.gitignore"
+    }
+  },
+  {
+    "name": "Waf.gitignore",
+    "path": "Waf.gitignore",
+    "sha": "dad2b56bddadf7af9e4721e769f7f46f6a754043",
+    "size": 204,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Waf.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Waf.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/dad2b56bddadf7af9e4721e769f7f46f6a754043",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Waf.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Waf.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/dad2b56bddadf7af9e4721e769f7f46f6a754043",
+      "html": "https://github.com/github/gitignore/blob/master/Waf.gitignore"
+    }
+  },
+  {
+    "name": "WordPress.gitignore",
+    "path": "WordPress.gitignore",
+    "sha": "a32768a94e496a030de0552d3ff2fa3c4c6d5b58",
+    "size": 477,
+    "url": "https://api.github.com/repos/github/gitignore/contents/WordPress.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/WordPress.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/a32768a94e496a030de0552d3ff2fa3c4c6d5b58",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/WordPress.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/WordPress.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/a32768a94e496a030de0552d3ff2fa3c4c6d5b58",
+      "html": "https://github.com/github/gitignore/blob/master/WordPress.gitignore"
+    }
+  },
+  {
+    "name": "Xojo.gitignore",
+    "path": "Xojo.gitignore",
+    "sha": "1b036dd4f2eb138d6b1facf724f9db5b1acdf3e9",
+    "size": 160,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Xojo.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Xojo.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/1b036dd4f2eb138d6b1facf724f9db5b1acdf3e9",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Xojo.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Xojo.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/1b036dd4f2eb138d6b1facf724f9db5b1acdf3e9",
+      "html": "https://github.com/github/gitignore/blob/master/Xojo.gitignore"
+    }
+  },
+  {
+    "name": "Yeoman.gitignore",
+    "path": "Yeoman.gitignore",
+    "sha": "7170d72018d19c0c6ce0fdb43c5f757cbe326c63",
+    "size": 52,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Yeoman.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Yeoman.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/7170d72018d19c0c6ce0fdb43c5f757cbe326c63",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Yeoman.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Yeoman.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/7170d72018d19c0c6ce0fdb43c5f757cbe326c63",
+      "html": "https://github.com/github/gitignore/blob/master/Yeoman.gitignore"
+    }
+  },
+  {
+    "name": "Yii.gitignore",
+    "path": "Yii.gitignore",
+    "sha": "70f087546f2c77ed7f0c921f4a1011ac765a0481",
+    "size": 120,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Yii.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Yii.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/70f087546f2c77ed7f0c921f4a1011ac765a0481",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Yii.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Yii.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/70f087546f2c77ed7f0c921f4a1011ac765a0481",
+      "html": "https://github.com/github/gitignore/blob/master/Yii.gitignore"
+    }
+  },
+  {
+    "name": "ZendFramework.gitignore",
+    "path": "ZendFramework.gitignore",
+    "sha": "f0b7d8585b703f2726eb98334d5452777400ef3e",
+    "size": 290,
+    "url": "https://api.github.com/repos/github/gitignore/contents/ZendFramework.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/ZendFramework.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/f0b7d8585b703f2726eb98334d5452777400ef3e",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/ZendFramework.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/ZendFramework.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/f0b7d8585b703f2726eb98334d5452777400ef3e",
+      "html": "https://github.com/github/gitignore/blob/master/ZendFramework.gitignore"
+    }
+  },
+  {
+    "name": "Zephir.gitignore",
+    "path": "Zephir.gitignore",
+    "sha": "839cb5d707038d3942c268c69d6b2b86639ca33a",
+    "size": 387,
+    "url": "https://api.github.com/repos/github/gitignore/contents/Zephir.gitignore?ref=master",
+    "html_url": "https://github.com/github/gitignore/blob/master/Zephir.gitignore",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/blobs/839cb5d707038d3942c268c69d6b2b86639ca33a",
+    "download_url": "https://raw.githubusercontent.com/github/gitignore/master/Zephir.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/Zephir.gitignore?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/blobs/839cb5d707038d3942c268c69d6b2b86639ca33a",
+      "html": "https://github.com/github/gitignore/blob/master/Zephir.gitignore"
+    }
+  },
+  {
+    "name": "community",
+    "path": "community",
+    "sha": "6c4b02b469b73a145463d9c4326e32f93b4a9105",
+    "size": 0,
+    "url": "https://api.github.com/repos/github/gitignore/contents/community?ref=master",
+    "html_url": "https://github.com/github/gitignore/tree/master/community",
+    "git_url": "https://api.github.com/repos/github/gitignore/git/trees/6c4b02b469b73a145463d9c4326e32f93b4a9105",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/github/gitignore/contents/community?ref=master",
+      "git": "https://api.github.com/repos/github/gitignore/git/trees/6c4b02b469b73a145463d9c4326e32f93b4a9105",
+      "html": "https://github.com/github/gitignore/tree/master/community"
+    }
+  }
+]

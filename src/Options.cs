@@ -9,5 +9,6 @@ namespace GetIgnore
         Verbose = 1 << 0,
         Preview = 1 << 1,
         Append = 1 << 2,
+        No = 1 << 3
     }
 }

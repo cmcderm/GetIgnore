@@ -7,7 +7,7 @@ namespace GetIgnore
     public class UserInputReader
     {
         static public bool GetConfirmation(string question, bool defaultAnswer = true){
-            Console.WriteLine("{0} ({1}): ",
+            Console.Write("{0} ({1}): ",
                 question,
                 defaultAnswer ? "Y/n" : "y/N"
             );

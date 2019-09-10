@@ -59,27 +59,49 @@ namespace GetIgnore
             var append = app.Option("-a|--append",
                                     "Append .gitignore contents instead of overwriting existing.",
                                     CommandOptionType.NoValue);
+            var no = app.Option("-n|--no",
+                                "Because I'm a lazy developer. Decline all prompts automagically.",
+                                CommandOptionType.NoValue);
 
             app.OnExecute(() => {
                 //Collect flags into one place
-
                 Options flags = GetFlags(app.GetOptions());
+
+                if(ignoreFiles.Values.Count == 0)
+                {
+                    Console.WriteLine("No arguments specified.");
+                    Console.Write("Enter the environments you need (separated by spaces): ");
+                    String[] envs = Console.ReadLine().Split(' ');
+                    foreach(string s in envs)
+                    {
+                        ignoreFiles.Values.Add(s);
+                    }
+                }
 
                 GHGetIgnore getter = new GHGetIgnore(flags);
                 string gitignore = getter.Get(ignoreFiles.Values);
                 
                 // Resolve File Name
                 string outputFile = @".\.gitignore";
-                if(output.HasValue()){
+                if(output.HasValue())
+                {
                     Console.WriteLine("Writing .gitignore to {0}...", output.Value());
                     outputFile = output.Value();
                 }
 
                 // If preview is selected, show and prompt the user to confirm
                 bool saveFile = true;
-                if(flags.HasFlag(Options.Preview)){
+                if(flags.HasFlag(Options.Preview))
+                {
                     Console.WriteLine(gitignore);
-                    saveFile = UserInputReader.GetConfirmation("Save file to " + outputFile + "?");
+                    if(!flags.HasFlag(Options.No))
+                    {
+                        saveFile = UserInputReader.GetConfirmation("Save file to " + outputFile + "?");
+                    }
+                    else
+                    {
+                        saveFile = false;
+                    }
                 }
 
                 // Write File
