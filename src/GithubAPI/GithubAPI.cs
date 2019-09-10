@@ -8,11 +8,10 @@ using QuickType;
 namespace GetIgnore.Github
 {
     /// <Summary>
-    /// A class to search the github .gitignore repo for the requested file -- Uses the github web API as you might guess
+    /// A class to search the github .gitignore repo for the requested file -- Uses the github web API as you might guess.
     /// </Summary>
+
     /// <Notes>
-    /// Whitespace isn't allowed, trims everything. "Visual Studio Code" becomes visualstudiocode
-    /// This is fine because nothing in the gitignore has spaces and I'm ignoring case
     /// Some kinda caching would be great, can even quickly check the time of last commit so it's never outdated
     /// </Notes>
     public class GithubAPI
@@ -24,8 +23,11 @@ namespace GetIgnore.Github
         /// Search for and download the specified gitignore, fails if not found
         /// </summary>
         /// <param name="ignore"></param>
-        /// <returns>The downloaded .gitignore contents</returns>
+        /// <returns>The downloaded .gitignore contents as a string</returns>
         /// <exception cref="FileNotFoundException">File was not found in the repository</exception>
+        /// <Example>
+        /// Input: "Visual Studio Code" -- Downloads visualstudiocode.gitignore and returns contents
+        /// </Example>
         public string download(string ignore){
             string output;
 
