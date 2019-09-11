@@ -58,10 +58,12 @@ namespace GetIgnore
             );
             var append = app.Option("-a|--append",
                                     "Append .gitignore contents instead of overwriting existing.",
-                                    CommandOptionType.NoValue);
+                                    CommandOptionType.NoValue
+            );
             var no = app.Option("-n|--no",
                                 "Because I'm a lazy developer. Decline all prompts automagically.",
-                                CommandOptionType.NoValue);
+                                CommandOptionType.NoValue
+            );
 
             app.OnExecute(() => {
                 //Collect flags into one place

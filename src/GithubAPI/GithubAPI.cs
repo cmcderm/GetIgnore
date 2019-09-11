@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text.RegularExpressions;
 using Newtonsoft.Json;
 
@@ -13,12 +14,16 @@ namespace GetIgnore.Github
 
     /// <Notes>
     /// Some kinda caching would be great, can even quickly check the time of last commit so it's never outdated
+    /// This would make sense to merge up into GithubGetIgnore because the line of separation definitely got blurred along the way.
     /// </Notes>
     public class GithubAPI
     {
-        const string apiURL = "https://api.github.com/repos/github/gitignore/contents/";
-        const string branchURL = "https://api.github.com/repos/github/gitignore/branches/master";
-        const string rawURL = "https://raw.githubusercontent.com/";
+        // Map of filenames (e.g. visualstudio.gitignore) to the URL to the raw download
+
+        private const string apiURL = "https://api.github.com/repos/github/gitignore/contents/";
+        private const string branchURL = "https://api.github.com/repos/github/gitignore/branches/master";
+        private const string rawURL = "https://raw.githubusercontent.com/";
+        public const string cachePath = "~/.getignore.cache";
 
         /// <summary>
         /// Search for and download the specified gitignore, fails if not found
@@ -29,7 +34,8 @@ namespace GetIgnore.Github
         /// <Example>
         /// Input: "Visual Studio Code" -- Downloads visualstudiocode.gitignore and returns contents
         /// </Example>
-        public string download(string ignore){
+        public string download(string ignore)
+        {
             string output;
 
             string listingJSON = WebFetch.fetch(apiURL);
@@ -89,26 +95,65 @@ namespace GetIgnore.Github
             throw new System.IO.FileNotFoundException("Specified .gitignore was not found in the Repository.");
         }
 
-        public string search(string ignore){
+        public string search(string ignore)
+        {
             return "Didn't find anything, Captain!";
             // I don't think he looked very hard
         }
 
         /// <summary>
-        /// Definitely not done, don't use it
+        /// Call before using the cache dictionary to ensure it is up to date
         /// </summary>
         /// <returns></returns>
-        public bool isRepoUpdated(){
-            Branch master = Branch.FromJson(WebFetch.fetch(branchURL));
+        public ListingCache getCache()
+        {
+
+            ListingCache cache;
+
+            Action<ListingCache> cacheUpdate = (cache) => {
+                // Gets the latest cache from github
+                cache.Update(
+                    Listing.FromJson(
+                        WebFetch.fetch(apiURL)
+                    )
+                );
+            };
+
+            if(File.Exists(cachePath))
+            {
+                // Load cache from file
+                cache = (ListingCache)JsonConvert.DeserializeObject(File.ReadAllText("~/.getignore.cache"));
+
+                // Get info branch info from Github
+                Branch master = Branch.FromJson(WebFetch.fetch(branchURL));
             
-            // Get the latest commits timestamp
-            DateTimeOffset lastCommitDate = master.Commit.Commit.Author.Date;
+                // Get the latest commits timestamp
+                DateTimeOffset lastCommitDate = master.Commit.Commit.Author.Date;
 
-            // Compare to cached timestamp
+                // Check the timestamp
+                // Could probably get by just checking the last changed time on the file...
+                if(DateTimeOffset.Compare(lastCommitDate, cache.TimeStamp) <= 0)
+                {
+                    cacheUpdate(cache);
+                    saveCache(cachePath, cache);
+                }
+            }
+            else
+            {
+                // Cache file doesn't exist, so create it and (if we're allowed) save it
+                // and (if we're allowed) save it to ~/.getignore.cache
+                cache = new ListingCache();
+                cacheUpdate(cache);
+                saveCache(cachePath, cache);
+            }
 
-            // Update cache
+            return cache;
+        }
 
-            return true;
+        private void saveCache(String path, ListingCache cache)
+        {
+            String cacheJSON = JsonConvert.SerializeObject(cache);
+            File.WriteAllText(path, cacheJSON);
         }
     }
 }
