@@ -23,7 +23,22 @@ namespace GetIgnore.Github
         private const string apiURL = "https://api.github.com/repos/github/gitignore/contents/";
         private const string branchURL = "https://api.github.com/repos/github/gitignore/branches/master";
         private const string rawURL = "https://raw.githubusercontent.com/";
-        public const string cachePath = "~/.getignore.cache";
+        public readonly string cachePath;
+
+        public GithubAPI(){
+            if(Environment.OSVersion.Platform == PlatformID.Unix)
+            {
+                cachePath = Environment.GetEnvironmentVariable("HOME");
+            }
+            else if(Environment.OSVersion.Platform == PlatformID.Win32NT)
+            {
+                cachePath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "/.getignore.cache";
+            }
+            else
+            {
+                cachePath = Environment.ExpandEnvironmentVariables("%HOMEDRIVE%%HOMEPATH%");
+            }
+        }
 
         /// <summary>
         /// Search for and download the specified gitignore, fails if not found
@@ -36,61 +51,13 @@ namespace GetIgnore.Github
         /// </Example>
         public string download(string ignore)
         {
-            string output;
+            ListingCache cache = getCache();
 
-            string listingJSON = WebFetch.fetch(apiURL);
-
-            //Console.WriteLine("Listing JSON: {0}", listingJSON);
-
-            // Buffer of listings before putting into queue
-            Listing[] listings = Listing.FromJson(listingJSON);
-
-            // Queue of listings to check next
-            Queue<Listing> listingsQueue = new Queue<Listing>(listings);
-            
-            // Dirs to throw back into the queue when it's empty
-            Stack<Listing> dirs = new Stack<Listing>();
-
-            // Read through all listings in the queue, push any dirs to stack
-            // Do-While because Count check at this point is redundant
-            do
+            if(cache.Data.ContainsKey(ignore))
             {
-                while(listingsQueue.Count > 0)
-                {
-                    Listing list = listingsQueue.Dequeue();
-
-                    if(list.Type == TypeEnum.Dir)
-                    {
-                        dirs.Push(list);
-                    }
-                    else
-                    {
-                        // This iteration is going to bail as soon as we find a match
-                        if(list.Name.ToLower().Equals(ignore.ToLower() + ".gitignore"))
-                        {
-                            output = $"####### File downloaded by GetIgnore from {list.DownloadUrl} #######" + Environment.NewLine +
-                            WebFetch.fetch(list.DownloadUrl) + Environment.NewLine +
-                            "#######";
-                            return output;
-                        }
-                    }
-                }
-                // After queue is empty, if there are dirs to check, fetch put their contents in queue
-                // This can lead to the queue to really explode -- Keep an eye on memory!
-                // It's important to note that this won't be reached if the .gitignore is found in the root
-                while(dirs.Count > 0)
-                {
-                    // Fetch contents from folder
-                    Console.WriteLine("About to expand dir: {0}", dirs.Peek().Path);
-                    string dirJSON = WebFetch.fetch(dirs.Pop().Url);
-                    listings = Listing.FromJson(dirJSON);
-                    foreach(Listing l in listings)
-                    {
-                        listingsQueue.Enqueue(l);
-                    }
-                }
-              
-            } while (listingsQueue.Count > 0);
+                return WebFetch.fetch(cache.Data[ignore]);
+            }
+            // Else: use search to find the closest matches and ask what the user wants
 
             throw new System.IO.FileNotFoundException("Specified .gitignore was not found in the Repository.");
         }
@@ -107,22 +74,23 @@ namespace GetIgnore.Github
         /// <returns></returns>
         public ListingCache getCache()
         {
-
             ListingCache cache;
 
-            Action<ListingCache> cacheUpdate = (cache) => {
+            DirectoryInfo pathInfo = new DirectoryInfo(cachePath);
+
+            Action<ListingCache> cacheUpdate = (c) => {
                 // Gets the latest cache from github
-                cache.Update(
+                c.Update(
                     Listing.FromJson(
                         WebFetch.fetch(apiURL)
                     )
                 );
             };
 
-            if(File.Exists(cachePath))
+            if(File.Exists(pathInfo.FullName))
             {
                 // Load cache from file
-                cache = (ListingCache)JsonConvert.DeserializeObject(File.ReadAllText("~/.getignore.cache"));
+                cache = (ListingCache)JsonConvert.DeserializeObject(File.ReadAllText(pathInfo.FullName));
 
                 // Get info branch info from Github
                 Branch master = Branch.FromJson(WebFetch.fetch(branchURL));
@@ -135,7 +103,7 @@ namespace GetIgnore.Github
                 if(DateTimeOffset.Compare(lastCommitDate, cache.TimeStamp) <= 0)
                 {
                     cacheUpdate(cache);
-                    saveCache(cachePath, cache);
+                    saveCache(pathInfo.FullName, cache);
                 }
             }
             else
@@ -144,7 +112,7 @@ namespace GetIgnore.Github
                 // and (if we're allowed) save it to ~/.getignore.cache
                 cache = new ListingCache();
                 cacheUpdate(cache);
-                saveCache(cachePath, cache);
+                saveCache(pathInfo.FullName, cache);
             }
 
             return cache;
