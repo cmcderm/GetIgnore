@@ -65,7 +65,7 @@ namespace QuickType
         public static Listing[] FromJson(string json) => JsonConvert.DeserializeObject<Listing[]>(json, QuickType.Converter.Settings);
     }
 
-    public static class Serialize
+    public static partial class Serialize
     {
         public static string ToJson(this Listing[] self) => JsonConvert.SerializeObject(self, QuickType.Converter.Settings);
     }

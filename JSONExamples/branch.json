@@ -1,0 +1,97 @@
+{
+  "name": "master",
+  "commit": {
+    "sha": "85bf08b19a77c62d7b6286c2db8811f2ff373b0f",
+    "node_id": "MDY6Q29tbWl0MTA2Mjg5Nzo4NWJmMDhiMTlhNzdjNjJkN2I2Mjg2YzJkYjg4MTFmMmZmMzczYjBm",
+    "commit": {
+      "author": {
+        "name": "Akito13",
+        "email": "akito.kitsune@protonmail.com",
+        "date": "2019-09-10T14:58:47Z"
+      },
+      "committer": {
+        "name": "Brendan Forster",
+        "email": "brendan@github.com",
+        "date": "2019-09-10T14:58:47Z"
+      },
+      "message": "Updated Nim.gitignore (#3172)\n\n* added further cache directory\r\n* added auto-generated documentation location",
+      "tree": {
+        "sha": "a2a92d9c451b892662bccbcace7bc782a64da47a",
+        "url": "https://api.github.com/repos/github/gitignore/git/trees/a2a92d9c451b892662bccbcace7bc782a64da47a"
+      },
+      "url": "https://api.github.com/repos/github/gitignore/git/commits/85bf08b19a77c62d7b6286c2db8811f2ff373b0f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/github/gitignore/commits/85bf08b19a77c62d7b6286c2db8811f2ff373b0f",
+    "html_url": "https://github.com/github/gitignore/commit/85bf08b19a77c62d7b6286c2db8811f2ff373b0f",
+    "comments_url": "https://api.github.com/repos/github/gitignore/commits/85bf08b19a77c62d7b6286c2db8811f2ff373b0f/comments",
+    "author": {
+      "login": "Akito13",
+      "id": 26848976,
+      "node_id": "MDQ6VXNlcjI2ODQ4OTc2",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/26848976?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Akito13",
+      "html_url": "https://github.com/Akito13",
+      "followers_url": "https://api.github.com/users/Akito13/followers",
+      "following_url": "https://api.github.com/users/Akito13/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Akito13/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Akito13/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Akito13/subscriptions",
+      "organizations_url": "https://api.github.com/users/Akito13/orgs",
+      "repos_url": "https://api.github.com/users/Akito13/repos",
+      "events_url": "https://api.github.com/users/Akito13/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Akito13/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "shiftkey",
+      "id": 359239,
+      "node_id": "MDQ6VXNlcjM1OTIzOQ==",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/359239?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/shiftkey",
+      "html_url": "https://github.com/shiftkey",
+      "followers_url": "https://api.github.com/users/shiftkey/followers",
+      "following_url": "https://api.github.com/users/shiftkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/shiftkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/shiftkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/shiftkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/shiftkey/orgs",
+      "repos_url": "https://api.github.com/users/shiftkey/repos",
+      "events_url": "https://api.github.com/users/shiftkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/shiftkey/received_events",
+      "type": "User",
+      "site_admin": true
+    },
+    "parents": [
+      {
+        "sha": "3dc70c8fc4506f387daf063e30901226f3c8ef52",
+        "url": "https://api.github.com/repos/github/gitignore/commits/3dc70c8fc4506f387daf063e30901226f3c8ef52",
+        "html_url": "https://github.com/github/gitignore/commit/3dc70c8fc4506f387daf063e30901226f3c8ef52"
+      }
+    ]
+  },
+  "_links": {
+    "self": "https://api.github.com/repos/github/gitignore/branches/master",
+    "html": "https://github.com/github/gitignore/tree/master"
+  },
+  "protected": false,
+  "protection": {
+    "enabled": false,
+    "required_status_checks": {
+      "enforcement_level": "off",
+      "contexts": [
+
+      ]
+    }
+  },
+  "protection_url": "https://api.github.com/repos/github/gitignore/branches/master/protection"
+}

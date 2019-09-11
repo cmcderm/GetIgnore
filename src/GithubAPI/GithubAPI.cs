@@ -17,6 +17,7 @@ namespace GetIgnore.Github
     public class GithubAPI
     {
         const string apiURL = "https://api.github.com/repos/github/gitignore/contents/";
+        const string branchURL = "https://api.github.com/repos/github/gitignore/branches/master";
         const string rawURL = "https://raw.githubusercontent.com/";
 
         /// <summary>
@@ -44,7 +45,6 @@ namespace GetIgnore.Github
             // Dirs to throw back into the queue when it's empty
             Stack<Listing> dirs = new Stack<Listing>();
 
-            String tabs = "";
             // Read through all listings in the queue, push any dirs to stack
             // Do-While because Count check at this point is redundant
             do
@@ -52,7 +52,7 @@ namespace GetIgnore.Github
                 while(listingsQueue.Count > 0)
                 {
                     Listing list = listingsQueue.Dequeue();
-                    Console.WriteLine("{0}{1}", tabs, list.Name);
+
                     if(list.Type == TypeEnum.Dir)
                     {
                         dirs.Push(list);
@@ -63,7 +63,7 @@ namespace GetIgnore.Github
                         if(list.Name.ToLower().Equals(ignore.ToLower() + ".gitignore"))
                         {
                             output = $"####### File downloaded by GetIgnore from {list.DownloadUrl} #######" + Environment.NewLine +
-                            $"{WebFetch.fetch(list.DownloadUrl)}" +
+                            WebFetch.fetch(list.DownloadUrl) + Environment.NewLine +
                             "#######";
                             return output;
                         }
@@ -75,6 +75,7 @@ namespace GetIgnore.Github
                 while(dirs.Count > 0)
                 {
                     // Fetch contents from folder
+                    Console.WriteLine("About to expand dir: {0}", dirs.Peek().Path);
                     string dirJSON = WebFetch.fetch(dirs.Pop().Url);
                     listings = Listing.FromJson(dirJSON);
                     foreach(Listing l in listings)
@@ -82,7 +83,6 @@ namespace GetIgnore.Github
                         listingsQueue.Enqueue(l);
                     }
                 }
-                tabs += "\t";
               
             } while (listingsQueue.Count > 0);
 
@@ -92,6 +92,23 @@ namespace GetIgnore.Github
         public string search(string ignore){
             return "Didn't find anything, Captain!";
             // I don't think he looked very hard
+        }
+
+        /// <summary>
+        /// Definitely not done, don't use it
+        /// </summary>
+        /// <returns></returns>
+        public bool isRepoUpdated(){
+            Branch master = Branch.FromJson(WebFetch.fetch(branchURL));
+            
+            // Get the latest commits timestamp
+            DateTimeOffset lastCommitDate = master.Commit.Commit.Author.Date;
+
+            // Compare to cached timestamp
+
+            // Update cache
+
+            return true;
         }
     }
 }
