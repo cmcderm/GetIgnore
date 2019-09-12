@@ -24,20 +24,10 @@ namespace GetIgnore.Github
         private const string branchURL = "https://api.github.com/repos/github/gitignore/branches/master";
         private const string rawURL = "https://raw.githubusercontent.com/";
         public readonly string cachePath;
+        public Options flags;
 
-        public GithubAPI(){
-            if(Environment.OSVersion.Platform == PlatformID.Unix)
-            {
-                cachePath = Environment.GetEnvironmentVariable("HOME");
-            }
-            else if(Environment.OSVersion.Platform == PlatformID.Win32NT)
-            {
-                cachePath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "/.getignore.cache";
-            }
-            else
-            {
-                cachePath = Environment.ExpandEnvironmentVariables("%HOMEDRIVE%%HOMEPATH%");
-            }
+        public GithubAPI(string CachePath, Options Flags = Options.None){
+            cachePath = CachePath;
         }
 
         /// <summary>

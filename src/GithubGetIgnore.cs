@@ -9,8 +9,8 @@ namespace GetIgnore
     {
         GithubAPI _gh;
 
-        public GHGetIgnore(Options flags = Options.None){
-            _gh = new GithubAPI();
+        public GHGetIgnore(String CachePath, Options flags = Options.None){
+            _gh = new GithubAPI(CachePath);
         }
 
         ///<Summary>

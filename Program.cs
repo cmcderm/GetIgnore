@@ -33,6 +33,20 @@ namespace GetIgnore
                 return string.Format("Version {0}", _config.GetSection("Config")["Version"]);
             });
 
+            String cachePath;
+            if(Environment.OSVersion.Platform == PlatformID.Unix)
+            {
+                cachePath = Environment.GetEnvironmentVariable("HOME") + "/.getignore.cache";
+            }
+            else if(Environment.OSVersion.Platform == PlatformID.Win32NT)
+            {
+                cachePath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "/.getignore.cache";
+            }
+            else
+            {
+                cachePath = Environment.ExpandEnvironmentVariables("%HOMEDRIVE%%HOMEPATH%") + "/.getignore.cache";
+            }
+
             var output = app.Option("-o|--output <outputFile>", 
                        "Define the file to output to instead of .gitignore",
                        CommandOptionType.SingleValue
@@ -60,11 +74,14 @@ namespace GetIgnore
                                     "Append .gitignore contents instead of overwriting existing.",
                                     CommandOptionType.NoValue
             );
+            var nocache = app.Option("-c|--nocache",
+                                     "Discard cache after running. Saves you a whole ~22.6KiB.",
+                                     CommandOptionType.NoValue);
             var no = app.Option("-n|--no",
                                 "Because I'm a lazy developer. Decline all prompts automagically.",
                                 CommandOptionType.NoValue
             );
-
+            
             app.OnExecute(() => {
                 //Collect flags into one place
                 Options flags = GetFlags(app.GetOptions());
@@ -80,7 +97,7 @@ namespace GetIgnore
                     }
                 }
 
-                GHGetIgnore getter = new GHGetIgnore(flags);
+                GHGetIgnore getter = new GHGetIgnore(cachePath, flags);
                 string gitignore = getter.Get(ignoreFiles.Values);
                 
                 // Resolve File Name
@@ -140,6 +157,31 @@ namespace GetIgnore
                 });
             });
 
+            app.Command("killcache", (command) => {
+                var kcForce = command.Option("-f|--force",
+                                         "Skips prompt before deleting.",
+                                         CommandOptionType.NoValue
+                );
+
+                command.OnExecute(() => {
+                    Options flags = GetFlags(command.GetOptions());
+                    if(!flags.HasFlag(Options.Force))
+                    {
+                        if(UserInputReader.GetConfirmation("You are about to delete your cache, Continue?", false)){return 0;}
+                    }
+                    if(!File.Exists(cachePath))
+                    {
+                        Console.WriteLine($"Cache not found at {cachePath}.");
+                        return 0;
+                    }
+                    else
+                    {
+                        File.Delete(cachePath);
+                    }
+                    return 0;
+                });
+            });
+
             try
             {
                 app.Execute(args);
@@ -164,6 +206,7 @@ namespace GetIgnore
             // For every potential flag
             foreach(CommandOption opt in optionArgs)
             {
+                //Console.Write($"{opt.LongName}: {opt.HasValue()}");
                 // If the flag is used (Has Value doesn't refer to whether or not an argument was given)
                 if(opt.HasValue())
                 {
@@ -173,11 +216,14 @@ namespace GetIgnore
                         if(opt.LongName.ToLower() == f.ToString().ToLower())
                         {
                             if(!flags.HasFlag(f)){
+                                //Console.Write($"\t Option {opt.LongName} applied");
                                 flags |= f;
+                                break;
                             }
                         }
                     }
                 }
+                //Console.WriteLine();
             }
 
             return flags;
