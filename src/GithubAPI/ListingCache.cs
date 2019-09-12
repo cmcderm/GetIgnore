@@ -11,7 +11,7 @@ namespace GetIgnore.Github
         public Dictionary<String, Uri> Data{get;}
 
         public ListingCache(){
-            Data = new Dictionary<String, Uri>();
+            Data = new Dictionary<String, Uri>(StringComparer.InvariantCultureIgnoreCase);
         }
 
         /// <summary>
@@ -47,7 +47,7 @@ namespace GetIgnore.Github
                         Match match = Regex.Match(list.Name, ignorePattern);
                         if(match.Success)
                         {
-                            Data.Add(match.Groups[0].Value, list.DownloadUrl);
+                            Data.Add(match.Groups[1].Value, list.DownloadUrl);
                         }
                     }
                 }

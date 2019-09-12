@@ -11,7 +11,6 @@ namespace GetIgnore.Github
     /// <Summary>
     /// A class to search the github .gitignore repo for the requested file -- Uses the github web API as you might guess.
     /// </Summary>
-
     /// <Notes>
     /// Some kinda caching would be great, can even quickly check the time of last commit so it's never outdated
     /// This would make sense to merge up into GithubGetIgnore because the line of separation definitely got blurred along the way.
@@ -28,6 +27,7 @@ namespace GetIgnore.Github
 
         public GithubAPI(string CachePath, Options Flags = Options.None){
             cachePath = CachePath;
+            flags = Flags;
         }
 
         /// <summary>
@@ -47,15 +47,51 @@ namespace GetIgnore.Github
             {
                 return WebFetch.fetch(cache.Data[ignore]);
             }
+            else
+            {
+                Console.WriteLine($"Exact match to {ignore} not found. ");
+                IList<String> searchResults = search(ignore);
+                if(searchResults.Count > 1){
+                    int choice = UserInputReader.EnumerateChoices(
+                        $"There are {searchResults.Count} .gitignore files similar to your choice.",
+                        "Enter a selection:",
+                        searchResults
+                    );
+
+                    if(choice > -1)
+                    {
+                        return WebFetch.fetch(cache.Data[searchResults[choice]]);
+                    }
+                }
+                else if(searchResults.Count == 1)
+                {
+                    if(UserInputReader.GetConfirmation($".gitignore {ignore} not found. Did you mean {searchResults[0]}?", false))
+                    {
+                        return WebFetch.fetch(cache.Data[searchResults[0]]);
+                    }
+                }
+            }
             // Else: use search to find the closest matches and ask what the user wants
 
             throw new System.IO.FileNotFoundException("Specified .gitignore was not found in the Repository.");
         }
 
-        public string search(string ignore)
+        public IList<String> search(string ignore)
         {
-            return "Didn't find anything, Captain!";
-            // I don't think he looked very hard
+            List<String> searchResults = new List<String>();
+            
+            ListingCache cache = getCache();
+
+            foreach(string listing in cache.Data.Keys)
+            {
+                if(listing.ToLower().Contains(ignore.ToLower()))
+                {
+                    searchResults.Add($"{listing}");
+                }
+            }
+            //TODO: Look into Levenshtein distance for sorting the search results by relevance
+
+            return searchResults;
         }
 
         /// <summary>
@@ -80,7 +116,7 @@ namespace GetIgnore.Github
             if(File.Exists(pathInfo.FullName))
             {
                 // Load cache from file
-                cache = (ListingCache)JsonConvert.DeserializeObject(File.ReadAllText(pathInfo.FullName));
+                cache = JsonConvert.DeserializeObject<ListingCache>(File.ReadAllText(pathInfo.FullName));
 
                 // Get info branch info from Github
                 Branch master = Branch.FromJson(WebFetch.fetch(branchURL));
@@ -110,8 +146,12 @@ namespace GetIgnore.Github
 
         private void saveCache(String path, ListingCache cache)
         {
-            String cacheJSON = JsonConvert.SerializeObject(cache);
-            File.WriteAllText(path, cacheJSON);
+            if(!flags.HasFlag(Options.Nocache))
+            {
+                Console.WriteLine($"Saving cache to {path}");
+                String cacheJSON = JsonConvert.SerializeObject(cache);
+                File.WriteAllText(path, cacheJSON);
+            }
         }
     }
 }

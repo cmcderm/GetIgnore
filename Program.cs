@@ -53,7 +53,7 @@ namespace GetIgnore
             );
 
             var ignoreFiles = app.Argument("ignoreFiles",
-                                      "Languages or environments to fetch .gitignore for",
+                                      "The .gitignore environments that you want.",
                                       true //Multiple Values
             );
 
@@ -75,7 +75,7 @@ namespace GetIgnore
                                     CommandOptionType.NoValue
             );
             var nocache = app.Option("-c|--nocache",
-                                     "Discard cache after running. Saves you a whole ~22.6KiB.",
+                                     "Discard cache after running. Saves you a whole ~20.4KiB.",
                                      CommandOptionType.NoValue);
             var no = app.Option("-n|--no",
                                 "Because I'm a lazy developer. Decline all prompts automagically.",
@@ -150,8 +150,20 @@ namespace GetIgnore
             });
 
             app.Command("search", (command) => {
+                var ignoreSearch = command.Argument("ignoreSearch",
+                                      "The .gitignore environments that you want to search for.");
+
                 command.OnExecute(() => {
-                    Console.Error.WriteLine("Error: Search is not yet implemented");
+                    Options flags = GetFlags(command.GetOptions());
+
+                    GHGetIgnore get = new GHGetIgnore(cachePath, flags);
+                    ICollection<string> searchResults = get.Search(ignoreSearch.Value);
+
+                    foreach(String result in searchResults)
+                    {
+                        Console.WriteLine(result);
+                    }
+                    Console.Write($"{Environment.NewLine}{searchResults.Count} search results found");
 
                     return 0;
                 });
