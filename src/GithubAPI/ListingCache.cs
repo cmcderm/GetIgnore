@@ -55,8 +55,8 @@ namespace GetIgnore.Github
                 while(dirs.Count > 0)
                 {
                     // Fetch contents from dir
-                    Console.Write("Fetching from dir: {0}", dirs.Peek().Name);
-                    Console.ReadLine();
+                    //Console.Write("Fetching from dir: {0}", dirs.Peek().Name);
+                    //Console.ReadLine();
                     string dirJSON = WebFetch.fetch(dirs.Pop().Url);
                     listings = Listing.FromJson(dirJSON);
                     foreach(Listing l in listings)

@@ -104,7 +104,7 @@ namespace GetIgnore
                 string outputFile = @".\.gitignore";
                 if(output.HasValue())
                 {
-                    Console.WriteLine("Writing .gitignore to {0}...", output.Value());
+                    Console.WriteLine($"Writing .gitignore to {output.Value()}...");
                     outputFile = output.Value();
                 }
 
@@ -128,7 +128,6 @@ namespace GetIgnore
                 {
                     try
                     {
-                        // I like this for resolving paths
                         DirectoryInfo dir = new DirectoryInfo(outputFile);
                         if(flags.HasFlag(Options.Append))
                         {
@@ -189,6 +188,32 @@ namespace GetIgnore
                     else
                     {
                         File.Delete(cachePath);
+                    }
+                    return 0;
+                });
+            });
+
+            app.Command("delete", (command) => {
+                command.Description = "Deletes .gitignore in current folder only.";
+
+                var kcForce = command.Option("-f|--force",
+                                         "Skips prompt before deleting.",
+                                         CommandOptionType.NoValue
+                );
+                
+                command.OnExecute(() => {
+                    Options flags = GetFlags(command.GetOptions());
+                    bool delete = true;
+                    
+                    var info = new DirectoryInfo(@".\.gitignore");
+
+                    if(!flags.HasFlag(Options.Force))
+                    {
+                        delete = UserInputReader.GetConfirmation("Really delete .gitignore at {info.FullName}?", false);
+                    }
+                    if(delete)
+                    {
+                        File.Delete(info.FullName);
                     }
                     return 0;
                 });
