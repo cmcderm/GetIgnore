@@ -62,6 +62,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.Packaging.Tools.Trimming": {
+              "target": "Package",
+              "version": "[1.1.0-preview1-26619-01, )"
             }
           },
           "imports": [
@@ -69,6 +73,17 @@
           ],
           "assetTargetFallback": true,
           "warn": true
+        }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
+        },
+        "osx-x64": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
         }
       }
     }

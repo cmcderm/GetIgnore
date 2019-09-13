@@ -33,13 +33,27 @@ namespace GetIgnore
                 return string.Format("Version {0}", _config.GetSection("Config")["Version"]);
             });
 
+            String cachePath;
+            if(Environment.OSVersion.Platform == PlatformID.Unix)
+            {
+                cachePath = Environment.GetEnvironmentVariable("HOME") + "/.getignore.cache";
+            }
+            else if(Environment.OSVersion.Platform == PlatformID.Win32NT)
+            {
+                cachePath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "/.getignore.cache";
+            }
+            else
+            {
+                cachePath = Environment.ExpandEnvironmentVariables("%HOMEDRIVE%%HOMEPATH%") + "/.getignore.cache";
+            }
+
             var output = app.Option("-o|--output <outputFile>", 
                        "Define the file to output to instead of .gitignore",
                        CommandOptionType.SingleValue
             );
 
             var ignoreFiles = app.Argument("ignoreFiles",
-                                      "Languages or environments to fetch .gitignore for",
+                                      "The .gitignore environments that you want.",
                                       true //Multiple Values
             );
 
@@ -58,11 +72,16 @@ namespace GetIgnore
             );
             var append = app.Option("-a|--append",
                                     "Append .gitignore contents instead of overwriting existing.",
-                                    CommandOptionType.NoValue);
+                                    CommandOptionType.NoValue
+            );
+            var nocache = app.Option("-c|--nocache",
+                                     "Discard cache after running. Saves you a whole ~20.4KiB.",
+                                     CommandOptionType.NoValue);
             var no = app.Option("-n|--no",
                                 "Because I'm a lazy developer. Decline all prompts automagically.",
-                                CommandOptionType.NoValue);
-
+                                CommandOptionType.NoValue
+            );
+            
             app.OnExecute(() => {
                 //Collect flags into one place
                 Options flags = GetFlags(app.GetOptions());
@@ -78,14 +97,14 @@ namespace GetIgnore
                     }
                 }
 
-                GHGetIgnore getter = new GHGetIgnore(flags);
+                GHGetIgnore getter = new GHGetIgnore(cachePath, flags);
                 string gitignore = getter.Get(ignoreFiles.Values);
                 
                 // Resolve File Name
                 string outputFile = @".\.gitignore";
                 if(output.HasValue())
                 {
-                    Console.WriteLine("Writing .gitignore to {0}...", output.Value());
+                    Console.WriteLine($"Writing .gitignore to {output.Value()}...");
                     outputFile = output.Value();
                 }
 
@@ -109,7 +128,6 @@ namespace GetIgnore
                 {
                     try
                     {
-                        // I like this for resolving paths
                         DirectoryInfo dir = new DirectoryInfo(outputFile);
                         if(flags.HasFlag(Options.Append))
                         {
@@ -131,9 +149,72 @@ namespace GetIgnore
             });
 
             app.Command("search", (command) => {
-                command.OnExecute(() => {
-                    Console.Error.WriteLine("Error: Search is not yet implemented");
+                var ignoreSearch = command.Argument("ignoreSearch",
+                                      "The .gitignore environments that you want to search for.");
 
+                command.OnExecute(() => {
+                    Options flags = GetFlags(command.GetOptions());
+
+                    GHGetIgnore get = new GHGetIgnore(cachePath, flags);
+                    ICollection<string> searchResults = get.Search(ignoreSearch.Value);
+
+                    foreach(String result in searchResults)
+                    {
+                        Console.WriteLine(result);
+                    }
+                    Console.Write($"{Environment.NewLine}{searchResults.Count} search results found");
+
+                    return 0;
+                });
+            });
+
+            app.Command("killcache", (command) => {
+                var kcForce = command.Option("-f|--force",
+                                         "Skips prompt before deleting.",
+                                         CommandOptionType.NoValue
+                );
+
+                command.OnExecute(() => {
+                    Options flags = GetFlags(command.GetOptions());
+                    if(!flags.HasFlag(Options.Force))
+                    {
+                        if(UserInputReader.GetConfirmation("You are about to delete your cache, Continue?", false)){return 0;}
+                    }
+                    if(!File.Exists(cachePath))
+                    {
+                        Console.WriteLine($"Cache not found at {cachePath}.");
+                        return 0;
+                    }
+                    else
+                    {
+                        File.Delete(cachePath);
+                    }
+                    return 0;
+                });
+            });
+
+            app.Command("delete", (command) => {
+                command.Description = "Deletes .gitignore in current folder only.";
+
+                var kcForce = command.Option("-f|--force",
+                                         "Skips prompt before deleting.",
+                                         CommandOptionType.NoValue
+                );
+                
+                command.OnExecute(() => {
+                    Options flags = GetFlags(command.GetOptions());
+                    bool delete = true;
+                    
+                    var info = new DirectoryInfo(@".\.gitignore");
+
+                    if(!flags.HasFlag(Options.Force))
+                    {
+                        delete = UserInputReader.GetConfirmation("Really delete .gitignore at {info.FullName}?", false);
+                    }
+                    if(delete)
+                    {
+                        File.Delete(info.FullName);
+                    }
                     return 0;
                 });
             });
@@ -154,6 +235,7 @@ namespace GetIgnore
         }
 
         // Wrote this in a way that it doesn't need to be changed whenever an option is added
+        // Downside is that the name in Enum Options need to match the long name of the flag
         // Using the CommandOptions given, return Options flags for easier use
         private static Options GetFlags(IEnumerable<CommandOption> optionArgs)
         {
@@ -162,6 +244,9 @@ namespace GetIgnore
             // For every potential flag
             foreach(CommandOption opt in optionArgs)
             {
+                // Uncomment the following to debug flags
+                //Console.WriteLine($"{opt.LongName}: {opt.HasValue()}");
+
                 // If the flag is used (Has Value doesn't refer to whether or not an argument was given)
                 if(opt.HasValue())
                 {
@@ -171,11 +256,14 @@ namespace GetIgnore
                         if(opt.LongName.ToLower() == f.ToString().ToLower())
                         {
                             if(!flags.HasFlag(f)){
+                                //Console.Write($"\t Option {opt.LongName} applied");
                                 flags |= f;
+                                break;
                             }
                         }
                     }
                 }
+                //Console.WriteLine();
             }
 
             return flags;

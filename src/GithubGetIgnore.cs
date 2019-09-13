@@ -9,8 +9,11 @@ namespace GetIgnore
     {
         GithubAPI _gh;
 
-        public GHGetIgnore(Options flags = Options.None){
-            _gh = new GithubAPI();
+        Options flags;
+
+        public GHGetIgnore(String CachePath, Options Flags = Options.None){
+            flags = Flags;
+            _gh = new GithubAPI(CachePath, flags);
         }
 
         ///<Summary>
@@ -39,23 +42,18 @@ namespace GetIgnore
             return gitignore.ToString();
         }
 
-        // TODO: Implement lol
-        public string Search(string[] ignoreFiles)
+        public ICollection<String> Search(String search)
         {
-            string gitignore = "";
-            foreach(string ignore in ignoreFiles)
+            //ICollection<String> searchResults;
+            try
             {
-                try
-                {
-                    gitignore += _gh.search(ignore);
-                }
-                catch( Exception ex )
-                {
-                    Console.WriteLine("Error: Could not complete search: {0}", ignore);
-                    Console.WriteLine(ex.Message);
-                }
+                return _gh.search(search);
             }
-            return gitignore;
+            catch( Exception ex )
+            {
+                Console.WriteLine(ex.Message + Environment.NewLine + ex.StackTrace);
+                throw new Exception($"Could not complete search: {search}", ex);
+            }
         }
     }
 }
