@@ -9,8 +9,10 @@ namespace GetIgnore.Github
     {
         public DateTimeOffset TimeStamp{get;}
         public Dictionary<String, Uri> Data{get;}
+        Options flags;
 
-        public ListingCache(){
+        public ListingCache(Options Flags = Options.None){
+            flags = Flags;
             Data = new Dictionary<String, Uri>(StringComparer.InvariantCultureIgnoreCase);
         }
 
@@ -20,7 +22,11 @@ namespace GetIgnore.Github
         /// <param name="listings"></param>
         public void Update(Listing[] listings)
         {
-            Console.WriteLine("Writing cache...");
+            if(flags.HasFlag(Options.Verbose))
+            {
+                Console.WriteLine("Writing cache...");
+            }
+            
             // Queue of listings to check next
             Queue<Listing> listingsQueue = new Queue<Listing>(listings);
             
@@ -37,6 +43,9 @@ namespace GetIgnore.Github
                 while(listingsQueue.Count > 0)
                 {
                     Listing list = listingsQueue.Dequeue();
+
+                    if(flags.HasFlag(Options.Verbose)){ Console.WriteLine(list.Path); }
+
                     if(list.Type == TypeEnum.Dir)
                     {
                         dirs.Push(list);
@@ -48,6 +57,7 @@ namespace GetIgnore.Github
                         if(match.Success)
                         {
                             Data.Add(match.Groups[1].Value, list.DownloadUrl);
+                            if(flags.HasFlag(Options.Verbose)){ Console.WriteLine($"Added {match.Groups[1].Value}."); }
                         }
                     }
                 }
@@ -55,10 +65,12 @@ namespace GetIgnore.Github
                 while(dirs.Count > 0)
                 {
                     // Fetch contents from dir
-                    //Console.Write("Fetching from dir: {0}", dirs.Peek().Name);
-                    //Console.ReadLine();
+                    
+                    if(flags.HasFlag(Options.Verbose)){ Console.WriteLine($"Expanding directory {dirs.Peek().Name}."); }
+
                     string dirJSON = WebFetch.fetch(dirs.Pop().Url);
                     listings = Listing.FromJson(dirJSON);
+                    
                     foreach(Listing l in listings)
                     {
                         listingsQueue.Enqueue(l);

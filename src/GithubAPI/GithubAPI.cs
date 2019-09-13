@@ -71,7 +71,6 @@ namespace GetIgnore.Github
                     }
                 }
             }
-            // Else: use search to find the closest matches and ask what the user wants
 
             throw new System.IO.FileNotFoundException("Specified .gitignore was not found in the Repository.");
         }
@@ -86,7 +85,14 @@ namespace GetIgnore.Github
             {
                 if(listing.ToLower().Contains(ignore.ToLower()))
                 {
-                    searchResults.Add($"{listing}");
+                    if(flags.HasFlag(Options.Verbose))
+                    {
+                        searchResults.Add($"{listing}{Environment.NewLine}\t{cache.Data[listing]}");
+                    }
+                    else
+                    {
+                        searchResults.Add($"{listing}");
+                    }
                 }
             }
             //TODO: Look into Levenshtein distance for sorting the search results by relevance
@@ -106,11 +112,21 @@ namespace GetIgnore.Github
 
             Action<ListingCache> cacheUpdate = (c) => {
                 // Gets the latest cache from github
+                if(flags.HasFlag(Options.Verbose))
+                {
+                    Console.WriteLine("Updating cache in memory from Github...");
+                }
+
                 c.Update(
                     Listing.FromJson(
                         WebFetch.fetch(apiURL)
                     )
                 );
+
+                if(flags.HasFlag(Options.Verbose))
+                {
+                    Console.WriteLine("Cache updated!");
+                }
             };
 
             if(File.Exists(pathInfo.FullName))
@@ -120,22 +136,39 @@ namespace GetIgnore.Github
 
                 // Get info branch info from Github
                 Branch master = Branch.FromJson(WebFetch.fetch(branchURL));
+
+                if(flags.HasFlag(Options.Verbose))
+                {
+                    Console.WriteLine($"Cache successfully loaded from {path}");
+                }
             
                 // Get the latest commits timestamp
                 DateTimeOffset lastCommitDate = master.Commit.Commit.Author.Date;
 
                 // Check the timestamp
-                // Could probably get by just checking the last changed time on the file...
+                // Could probably get by just checking the last changed time on the file instead of from cache timestamp?
                 if(DateTimeOffset.Compare(lastCommitDate, cache.TimeStamp) <= 0)
                 {
+                    if(flags.HasFlag(Options.Verbose))
+                    {
+                        Console.WriteLine($"Cache is outdated.");
+                    }
                     cacheUpdate(cache);
                     saveCache(pathInfo.FullName, cache);
+                }
+                else if(flags.HasFlag(Options.Verbose))
+                {
+                    Console.WriteLine($"Cache up to date with Github, no updates needed.");
                 }
             }
             else
             {
                 // Cache file doesn't exist, so create it and (if we're allowed) save it
                 // and (if we're allowed) save it to ~/.getignore.cache
+                if(flags.HasFlag(Options.Verbose))
+                {
+                    Console.WriteLine($"No cache found, creating in memory...");
+                }
                 cache = new ListingCache();
                 cacheUpdate(cache);
                 saveCache(pathInfo.FullName, cache);
@@ -148,7 +181,10 @@ namespace GetIgnore.Github
         {
             if(!flags.HasFlag(Options.Nocache))
             {
-                Console.WriteLine($"Saving cache to {path}");
+                if(flags.HasFlag(Options.Verbose))
+                {
+                    Console.WriteLine($"Saving cache to {path}");
+                }
                 String cacheJSON = JsonConvert.SerializeObject(cache);
                 File.WriteAllText(path, cacheJSON);
             }
