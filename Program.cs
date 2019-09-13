@@ -9,8 +9,6 @@ using Microsoft.Extensions.CommandLineUtils;
 
 namespace GetIgnore
 {
-
-    
     class Program
     {
         static void Main(string[] args)
