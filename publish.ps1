@@ -14,8 +14,8 @@ set-alias sz "${env:ProgramFiles}\7-Zip\7z.exe"
 ##############
 # Windows 10 #
 ##############
-$Source = ".\obj\release\netcoreapp2.2\win10-x64"
-$Target = ".\obj\release\netcoreapp2.2\GetIgnore-v" + $Version + "-Windows.zip"
+$Source = ".\bin\release\netcoreapp2.2\win10-x64"
+$Target = ".\bin\release\netcoreapp2.2\GetIgnore-v" + $Version + "-Windows.zip"
 
 if (Test-Path $Target) 
 {
@@ -27,8 +27,8 @@ sz a -mx=9 $Target $Source
 #############
 #   MacOS   #
 #############
-$Source = ".\obj\release\netcoreapp2.2\osx-x64"
-$Target = ".\obj\release\netcoreapp2.2\GetIgnore-v" + $Version + "-MacOS.zip"
+$Source = ".\bin\release\netcoreapp2.2\osx-x64"
+$Target = ".\bin\release\netcoreapp2.2\GetIgnore-v" + $Version + "-MacOS.zip"
 
 if (Test-Path $Target) 
 {
@@ -40,8 +40,8 @@ sz a -mx=9 $Target $Source
 #############
 #   Linux   #
 #############
-$Source = ".\obj\release\netcoreapp2.2\linux-x64"
-$Target = ".\obj\release\netcoreapp2.2\GetIgnore-v" + $Version + "-Linux-x64.tar.gz"
+$Source = ".\bin\release\netcoreapp2.2\linux-x64"
+$Target = ".\bin\release\netcoreapp2.2\GetIgnore-v" + $Version + "-Linux-x64.tar.gz"
 
 if (Test-Path $Target) 
 {
