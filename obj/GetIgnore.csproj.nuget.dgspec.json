@@ -60,7 +60,7 @@
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.2.6, )",
+              "version": "[2.2.0, )",
               "autoReferenced": true
             },
             "Microsoft.Packaging.Tools.Trimming": {

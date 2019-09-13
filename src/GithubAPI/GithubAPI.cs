@@ -19,11 +19,23 @@ namespace GetIgnore.Github
     {
         // Map of filenames (e.g. visualstudio.gitignore) to the URL to the raw download
 
+        public readonly string cachePath;
+        public Options flags;
+
         private const string apiURL = "https://api.github.com/repos/github/gitignore/contents/";
         private const string branchURL = "https://api.github.com/repos/github/gitignore/branches/master";
         private const string rawURL = "https://raw.githubusercontent.com/";
-        public readonly string cachePath;
-        public Options flags;
+        private ListingCache listCache;
+        private ListingCache cache{
+            get{
+                if(listCache == null)
+                {
+                    listCache = getCache();
+                }
+                return listCache;
+            }
+        }
+
 
         public GithubAPI(string CachePath, Options Flags = Options.None){
             cachePath = CachePath;
@@ -41,10 +53,12 @@ namespace GetIgnore.Github
         /// </Example>
         public string download(string ignore)
         {
-            ListingCache cache = getCache();
-
             if(cache.Data.ContainsKey(ignore))
             {
+                if(flags.HasFlag(Options.Verbose))
+                {
+                    Console.WriteLine($"Downloading .gitignore for {ignore}");
+                }
                 return WebFetch.fetch(cache.Data[ignore]);
             }
             else
@@ -60,14 +74,29 @@ namespace GetIgnore.Github
 
                     if(choice > -1)
                     {
-                        return WebFetch.fetch(cache.Data[searchResults[choice]]);
+                        // In the case that search adds extra lines for information, clean it up
+                        string choiceName = new StringReader(searchResults[choice]).ReadLine();
+
+                        if(flags.HasFlag(Options.Verbose))
+                        {
+                            Console.WriteLine($"Downloading .gitignore for {choiceName}");
+                        }
+                        
+                        return WebFetch.fetch(cache.Data[choiceName]);
                     }
                 }
                 else if(searchResults.Count == 1)
                 {
                     if(UserInputReader.GetConfirmation($".gitignore {ignore} not found. Did you mean {searchResults[0]}?", false))
                     {
-                        return WebFetch.fetch(cache.Data[searchResults[0]]);
+                        string choiceName = new StringReader(searchResults[0]).ReadLine();
+
+                        if(flags.HasFlag(Options.Verbose))
+                        {
+                            Console.WriteLine($"Downloading .gitignore for {choiceName}");
+                        }
+                        
+                        return WebFetch.fetch(cache.Data[choiceName]);
                     }
                 }
             }
@@ -75,12 +104,12 @@ namespace GetIgnore.Github
             throw new System.IO.FileNotFoundException("Specified .gitignore was not found in the Repository.");
         }
 
+        // Verbose here just represents a way to cancel out the verbosity
+        // Not a clean solution by any means /shrug
         public IList<String> search(string ignore)
         {
             List<String> searchResults = new List<String>();
             
-            ListingCache cache = getCache();
-
             foreach(string listing in cache.Data.Keys)
             {
                 if(listing.ToLower().Contains(ignore.ToLower()))
@@ -133,13 +162,14 @@ namespace GetIgnore.Github
             {
                 // Load cache from file
                 cache = JsonConvert.DeserializeObject<ListingCache>(File.ReadAllText(pathInfo.FullName));
+                cache.flags = flags;
 
                 // Get info branch info from Github
                 Branch master = Branch.FromJson(WebFetch.fetch(branchURL));
 
                 if(flags.HasFlag(Options.Verbose))
                 {
-                    Console.WriteLine($"Cache successfully loaded from {path}");
+                    Console.WriteLine($"Cache successfully loaded from {pathInfo.FullName}");
                 }
             
                 // Get the latest commits timestamp
@@ -169,7 +199,7 @@ namespace GetIgnore.Github
                 {
                     Console.WriteLine($"No cache found, creating in memory...");
                 }
-                cache = new ListingCache();
+                cache = new ListingCache(flags);
                 cacheUpdate(cache);
                 saveCache(pathInfo.FullName, cache);
             }

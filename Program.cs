@@ -235,6 +235,7 @@ namespace GetIgnore
         }
 
         // Wrote this in a way that it doesn't need to be changed whenever an option is added
+        // Downside is that the name in Enum Options need to match the long name of the flag
         // Using the CommandOptions given, return Options flags for easier use
         private static Options GetFlags(IEnumerable<CommandOption> optionArgs)
         {
@@ -243,7 +244,9 @@ namespace GetIgnore
             // For every potential flag
             foreach(CommandOption opt in optionArgs)
             {
-                //Console.Write($"{opt.LongName}: {opt.HasValue()}");
+                // Uncomment the following to debug flags
+                //Console.WriteLine($"{opt.LongName}: {opt.HasValue()}");
+
                 // If the flag is used (Has Value doesn't refer to whether or not an argument was given)
                 if(opt.HasValue())
                 {

@@ -9,7 +9,7 @@ namespace GetIgnore.Github
     {
         public DateTimeOffset TimeStamp{get;}
         public Dictionary<String, Uri> Data{get;}
-        Options flags;
+        public Options flags {get; set;}
 
         public ListingCache(Options Flags = Options.None){
             flags = Flags;
@@ -65,7 +65,7 @@ namespace GetIgnore.Github
                 while(dirs.Count > 0)
                 {
                     // Fetch contents from dir
-                    
+
                     if(flags.HasFlag(Options.Verbose)){ Console.WriteLine($"Expanding directory {dirs.Peek().Name}."); }
 
                     string dirJSON = WebFetch.fetch(dirs.Pop().Url);
