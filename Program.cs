@@ -86,9 +86,10 @@ namespace GetIgnore
 
                 if(ignoreFiles.Values.Count == 0)
                 {
-                    Console.WriteLine("No arguments specified.");
+                    Console.WriteLine("No .gitignores specified.");
                     Console.Write("Enter the environments you need (separated by spaces): ");
                     String[] envs = Console.ReadLine().Split(' ');
+                    if(envs[0].ToLower() == "q" || envs[0].ToLower() == "quit")
                     foreach(string s in envs)
                     {
                         ignoreFiles.Values.Add(s);
